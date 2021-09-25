@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assests/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    
+    <title>Book</title>
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="destopHeader grid">
+                <div class="destopHeader__left">
+                    <div class="destopHeader__left-img">
+                        <a href="">
+                            <img src="assets/img/destopHeader--img/tblogo-green_20200225.svg" alt="" class="destopHeader-img">
+                        </a>
+                    </div>
+                    <div class="destopHeader__left-search">
+                        <div class="search">
+                            <input type="text" name="" id="" placeholder="Search 13 million titles by title, author, or ISBN" class="destopHeader-search">
+                            <div class="destopHeader__left-btn">
+                                <a href="" class="">
+                                    <button type="submit" class="destopHeader-btn">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="destopHeader__right">
+                       <div class="destopHeader__account">
+                        <div class="destopHeader__account-container">
+                            <button onclick="showSignInAcc();" class="btn btn--login">  
+                                Đăng nhập
+                                <i class="more-icon fas fa-caret-down"></i>
+                            </button>
+                          
+                           <ul class="subacc__list">
+                               <li><a href="" class="subacc__item">Tạo tài khoản</a></li>
+                               <li><a href="" class="subacc__item">Danh sách mong muốn</a></li>
+                               <li><a href="" class="subacc__item">Đơn hàng</a></li>
+                               <li><a href="" class="subacc__item">Trợ giúp & Hỗ trợ</a></li>
+                               <li><a class="btn btn--logout js-btn--logout">Đăng xuất</a></li>
+                           </ul>
+                        </div>
+                       </div>
+                       <div class="divied"></div>
+                       <div class="destopHeader__cart">
+                            <div class="destopHeader__cart destopHeader__cart--love">
+                                <a href="" class="">    
+                                    <i class="destopHeader__cart-icon--love fas fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="destopHeader__cart destopHeader__cart--book">
+                                <a href="" class="">
+                                    <i  class="fas fa-shopping-cart destopHeader__cart-icon--book"></i>
+                                </a>
+                                <div class="quantity-buy--book">0</div>
+                            </div>
+                       </div>
+                    
+                </div>
+            </div>
+            <div class="destopNavigation">
+                <div class="superMenu superMenu--border-bot grid">
+                    <div class="superMenu ">
+                        <!-- menu img -->
+                        <div class="superMenu__item">
+                            <a href="">
+                                <span class="superMenu__item-link">
+                                    Đặc sắc
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <div class="MenuDropdown-container">
+                                <div class="MenuDropdown-submenu">
+                                    <div class="Submenu-container Submenu-container-FeaturedContent">
+                                        <div class="Submenu-FeaturedContentItem">
+                                            <a href="" class="Submenu-FeaturedContentItem-link">
+                                                <img src="./assets/img/navbar-img/IndieAugust-DT-S_d6c4219c.jpg" alt="">
+                                                <span>Indie Next</span>
+                                            </a>
+                                        </div>
+                                        <div class="Submenu-FeaturedContentItem">
+                                            <a href="" class="Submenu-FeaturedContentItem-link">
+                                                <img src="./assets/img/navbar-img/DT-S-_264x144_d1ea7747.jpg" alt="">
+                                                <span>Sách nâng cao dành cho người đọc</span>
+                                            </a>
+                                        </div>
+                                        <div class="Submenu-FeaturedContentItem">
+                                            <a href="" class="Submenu-FeaturedContentItem-link">
+                                                <img src="./assets/img/navbar-img/DT-S-_264x144_83787454.jpg" alt="">
+                                                <span>Nhìn lại mùa hè</span>
+                                            </a>
+                                        </div>
+                                        <div class="Submenu-FeaturedContentItem">
+                                            <a href="" class="Submenu-FeaturedContentItem-link">
+                                                <img src="./assets/img/navbar-img/DT-S--264x144_858a71cd.jpg" alt="">
+                                                <span>Bán chạy nhất</span>
+                                            </a>
+                                        </div>
+                                        <div class="Submenu-FeaturedContentItem">
+                                            <a href="" class="Submenu-FeaturedContentItem-link">
+                                                <img src="./assets/img/navbar-img/BestSellers-DT-S_70ba2b4b.jpg" alt="">
+                                                <span>Truyện</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- menu sach -->
+                        <div class="superMenu__item">
+                            <a href="">
+                                <span class="superMenu__item-link">
+                                    Sách
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <div class="MenuDropdown-container">
+                                <div class="MenuDropdown-submenu">
+                                        <div class="Submenu-container">
+                                            <ul class="Submenu-leftOption grid__row SubMenu-leftOption-list ">
+                                                <li class="Submenu-leftOption-item">
+                                                    <h4><a href="">Tiểu sử & Hồi ức</a></h4>
+                                                    <span><a href="">Nghệ thuật & Văn học</a></span>
+                                                    <span><a href="">Văn Hóa</a></span>
+                                                    <span><a href="">Châu lục</a></span>
+                                                    <span><a href="">Lịch sử</a></span>
+                                                    <span><a href="">Lãnh đạo & những người đáng chú ý</a></span>
+                                                    <span><a href="">Mua sắm tất cả</a></span>
+                                                </li>
+                                                <li class="Submenu-leftOption-item">
+                                                    <h4><a href="">Trẻ em</a></h4>
+                                                    <span><a href="">Phiêu lưu hành động</a></span>
+                                                    <span><a href="">Loài vật</a></span>
+                                                    <span><a href="">Ô tô & Xe tải</a></span>
+                                                    <span><a href="">Kinh điển</a></span>
+                                                    <span><a href="">Sách hoạt động</a></span>
+                                                    <span><a href="">Mua sắm tất cả</a></span>
+                                                </li>
+                                                <li class="Submenu-leftOption-item">
+                                                    <h4><a href="">Giáo dục & Thảm khỏa</a></h4>
+                                                    <span><a href="">Dạnh mục</a></span>
+                                                    <span><a href="">Trường cao đẳng</a></span>
+                                                    <span><a href="">Tham khảo</a></span>
+                                                    <span><a href="">Từ điển</a></span>
+                                                    <span><a href="">Giáo dục</a></span>
+                                                    <span><a href="">Mua sắm tất cả</a></span>
+                                                </li>
+                                                <li class="Submenu-leftOption-item">
+                                                    <h4><a href="">Lịch sử</a></h4>
+                                                    <span><a href="">Người cổ đại</a></span>
+                                                    <span><a href="">Người Châu Phi</a></span>
+                                                    <span><a href="">Châu Á</a></span>
+                                                    <span><a href="">Lịch sử đen</a></span>
+                                                    <span><a href="">Người Canada</a></span>
+                                                    <span><a href="">Mua sắm tất cả</a></span>
+                                                </li>
+                                                <li class="Submenu-leftOption-item">
+                                                    <h4><a href="">Văn học & Viễn tưởng</a></h4>
+                                                    <span><a href="">Tuyển tập</a></span>
+                                                    <span><a href="">Kinh điển</a></span>
+                                                    <span><a href="">Đông thời</a></span>
+                                                    <span><a href="">Ngoại ngữ</a></span>
+                                                    <span><a href="">Thể loại hư cấu</a></span>
+                                                    <span><a href="">Mua sắm tất cả</a></span>
+                                                </li>
+                                                <li class="Submenu-leftOption-item">
+                                                    <h4><a href="">Bí ẩn & Li kì</a></h4>
+                                                    <span><a href="">Âm mưu</a></span>
+                                                    <span><a href="">Tội ác</a></span>
+                                                    <span><a href="">Thám tử</a></span>
+                                                    <span><a href="">Bí ẩn</a></span>
+                                                    <span><a href="">Gián điệp</a></span>
+                                                    <span><a href="">Mua sắm tất cả</a></span>
+                                                </li>
+                                                <li class="Submenu-leftOption-item">
+                                                    <h4><a href="">Tôn giáo &T Tâm linh</a></h4>
+                                                    <span><a href="">Thuyết bất khả tri</a></span>
+                                                    <span><a href="">Chiêm tinh học</a></span>
+                                                    <span><a href="">Thuyết vô thần</a></span>
+                                                    <span><a href="">Đạo phật</a></span>
+                                                    <span><a href="">Cơ đốc giáo</a></span>
+                                                    <span><a href="">Mua sắm tất cả</a></span>
+                                                </li>
+                                                <li class="Submenu-leftOption-item">
+                                                    <h4><a href="">Các hạng mục khác</a></h4>
+                                                    <span><a href="">Lãng mạn</a></span>
+                                                    <span><a href="">Khoa học viễn tưởng & giả tưởng</a></span>
+                                                    <span><a href="">Toán khoa học</a></span>
+                                                    <span><a href="">Thanh thiếu niên & thanh niên</a></span>
+                                                    <span><a href="">Sức khỏe, Thể hình & Ăn kiêng</a></span>
+                                                    <span><a href="">Mua sắm tất cả</a></span>
+                                                </li>
+                                            </ul>
+                                            <div class="Submenu-rightOption">
+                                                <div class="Submenu-rightOption__top">
+                                                    <span><a href="">Bán chạy nhất</a></span>
+                                                    <span><a href="">Bản in lớn</a></span>
+                                                    <span><a href="">Ngoại ngữ</a></span>
+                                                </div>
+                                                <div class="Submenu-rightOption__bottom">
+                                                    <span><a href="">Ưu đãi sách tiết kiệm</a></span>
+                                                    <span><a href="">ReadingRewards</a></span>
+                                                    <span><a href="">Xem tất cả phiếu mua hàng</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--menu sach suu tam-->
+                        <div class="superMenu__item">
+                            <a href="">
+                                <span class="superMenu__item-link">
+                                    Sách sưu tầm
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <div class="MenuDropdown-container">
+                                <div class="MenuDropdown-submenu">
+                                        <div class="Submenu-container">
+                                            <div class="Submenu-leftOption grid__col">
+                                                <h4><a href="">Thể loại</a></h4>
+                                                <ul class=" grid__row SubMenu-leftOption-list Submenu-leftOption--space-between">
+                                                    <li class="Submenu-leftOption-item">
+                                                        <span><a href="">Phiêu luu hành động</a></span>
+                                                        <span><a href="">Sách cho trẻ em</a></span>
+                                                        <span><a href="">Tiểu sử</a></span>
+                                                        <span><a href="">Nghệ thuật,Âm nhạc & Nhiếp ảnh</a></span>
+                                                        <span><a href="">Giáo dục & Tham khảo</a></span>
+                                                        <span><a href="">Thể loại hư cấu</a></span>
+                                                        <span><a href="">Lịch sử</a></span>
+                                                        <span><a href="">Đồng thời</a></span>
+                                                        <span><a href="">Kinh điển</a></span>
+                                                        <span><a href="">Châu Mỹ</a></span>
+                                                    </li>
+                                                    <li class="Submenu-leftOption-item">
+                                                        <span><a href="">Môn lịch sử</a></span>
+                                                        <span><a href="">Nhân văn</a></span>
+                                                        <span><a href="">Văn học</a></span>
+                                                        <span><a href="">Văn học & Viễn tưởng</a></span>
+                                                        <span><a href="">Quân sự</a></span>
+                                                        <span><a href="">Bí ẩn, li kì & li kì</a></span>
+                                                        <span><a href="">Chính trị & Khoa học xã hội</a></span>
+                                                        <span><a href="">Tôn giáo & Tâm linh</a></span>
+                                                        <span><a href="">Toán khoa học</a></span>
+                                                        <span><a href="">Khoa học viễn tưởng & giả tưởng</a></span>
+                                                    </li>
+                                                    <li class="Submenu-leftOption-item">
+                                                        <span><a href="">Khoa học xã hội</a></span>
+                                                        <span><a href="">Sách giáo khoa</a></span>
+                                                        <span><a href="">Du lịch</a></span>
+                                                        <span><a href="">Phim kinh dị</a></span>
+                                                        <span><a href="">Quốc gia</a></span>
+                                                        
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="Submenu-rightOption">
+                                                <div class="Submenu-rightOption__top">
+                                                    <span><a href="">Phiên bản đầu tiên</a></span>
+                                                    <span><a href="">Sách đã ký</a></span>
+                                                    <span><a href=""></a></span>
+                                                </div>
+                                                <div class="Submenu-rightOption__bottom">
+                                                    <span><a href=""></a></span>
+                                                    <span><a href=""></a></span>
+                                                    <span><a href=""></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- betterseller -->
+                        <div class="superMenu__item">
+                            <a href="">
+                                <span class="superMenu__item-link">
+                                    Bán chạy nhất
+                                    
+                                </span>
+                            </a>
+                        </div>
+                        <!-- new and trending -->
+                        <div class="superMenu__item">
+                            <a href="">
+                                <span class="superMenu__item-link">
+                                    Mới & Thịnh hành
+                                  
+                                </span>
+                            </a>
+                        </div>
+                        <!-- thriftBook Deals -->
+                        <div class="superMenu__item">
+                            <a href="">
+                                <span class="superMenu__item-link">
+                                    Sách ưu đãi
+                                   
+                                </span>
+                            </a>
+                        </div>
+                        <!-- just arrived -->
+                        <div class="superMenu__item">
+                            <a href="">
+                                <span class="superMenu__item-link">
+                                    Vừa tới
+                                   
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-container">
+            
+            <!-- content covid -->
+            <div class="container-covid">
+                <div class="container-covid grid">
+                    <div class="container-covid__heading">
+                        <a href="" class="covid__heading-title text--hover">Read our full COVID-19 satement</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- maketting banner -->
+
+            <div class="homeMaketting">
+                <!-- img left -->
+                <div class="homeMaketting grid grid__row">
+                    <div class="homeMaketting__left grid__col grid__half-or-full border--maketting">
+                        <a href="" class="homeMaketting__modal-img">
+                            <img src="./assets/img/maketting/left.jpg" alt="" class="homeMaketting-img">
+                        </a>
+                        <span><a href="" class="homeMaketting-title max--line-clam">Featured Pre-Order</a></span>
+                        <span><a href="" class="homeMaketting-desc text--hover max--line-clam">Get 2x points on all books by our featured authors</a></span>
+                    </div>
+                    <div class="divied__maketting--col"></div>
+                    <!-- img right -->
+                    <div class="homeMaketting__right grid__col grid__half-or-full">
+                        <!-- img right-top -->
+                        <div class="homeMaketting__left grid__col border--maketting ">
+                            <a href="" class="homeMaketting__modal-img">
+                                <img src="./assets/img/maketting/bot-top.jpg" alt="" class="homeMaketting-img img--max-hight">
+                            </a>
+                            <span><a href="" class="homeMaketting-title max--line-clam">Presh Fall Reads</a></span>
+                            <span><a href="" class="homeMaketting-desc text--hover max--line-clam">Cozy up with a good book</a></span>
+                        </div>
+                        <div class="dvivied__maketting-row"></div>
+                        <!-- img right-bot -->
+                        <div class="homeMaketting__right grid__row grid__half-or-full">
+                            <!-- img right-bot-left -->
+                            <div class="homeMaketting__left grid__col  grid__half-or-full border--maketting">
+                                <a href="" class="homeMaketting__modal-img">
+                                    <img src="./assets/img/maketting/bot-left.jpg" alt="" class="homeMaketting-img">
+                                </a>
+                                <span><a href="" class="homeMaketting-title max--line-clam">Book Club Reads</a></span>
+                                <span><a href="" class="homeMaketting-desc text--hover max--line-clam">See this month's picks</a></span>
+                            </div>
+
+                            <div class="divied__maketting--col"></div>
+                            <!-- img right-bot-right -->
+                            <div class="homeMaketting__right grid__col grid__half-or-full border--maketting">
+                                <a href="" class="homeMaketting__modal-img">
+                                    <img src="./assets/img/maketting/bot-right.jpg" alt="" class="homeMaketting-img">
+                                </a>
+                                <span><a href="" class="homeMaketting-title max--line-clam">Best Sellers</a></span>
+                                <span><a href="" class="homeMaketting-desc text--hover max--line-clam">Shop our new best sellers</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- endow: ưu đãi -->
+            <div class="endow">
+                <div class="endow grid">
+                    <div class="endow__list grid__row">
+                        <div class="endow__item grid__col">
+                            <span><a href="" class="endow__heading">ReadingRewards</a></span>
+                            <span><a href="" class="endow__desc">Tham gia ngay để kiếm SÁCH MIỄN PHÍ</a></span>
+                        </div>
+                        <div class="endow__item grid__col">
+                            <span><a href="" class="endow__heading">Ưu đãi sách tiết kiệm</a></span>
+                            <span><a href="" class="endow__desc">Giảm 10% cho bất kỳ mặt hàng đủ điều kiện nào</a></span>
+                        </div>
+                        <div class="endow__item grid__col">
+                            <span><a href="" class="endow__heading">Ứng dụng di động</a></span>
+                            <span><a href="" class="endow__desc">Mua sắm nhanh hơn và kiếm điểm thưởng</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- bookslider navigation -->
+
+            <div class="bookSliderNav">
+                <div class="bookSliderNav grid ">
+                    <!-- bestseller -->
+                    <div class="bookSliderNav__super grid__col">
+                        <span><a href="" class="bookSliderNav__heading text-under--hover" >Bán chạy nhất</a></span>
+                        <span><a href="" class="bookSliderNav__desc">Sách bạn chạy nhất năm nay</a></span>
+                        <ul class="bookSliderNav__list grid__row">
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="./assets/img/bestseller/don-quixote-don-ki-ho-te-15605.jpg" alt="" class="bookSliderNav-img bookSliderNav-img--max-width">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam">Don Quixote (Đôn-ki-hô-tê)</a>
+                                            <span><a href="" class="author">Miguel de Cervantes</a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$4.69</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="./assets/img/bestseller/harry-potter-and-the-philosophers-stone-harry-porter-va-hon-da-phu-thuy-15481.jpg" alt="" class="bookSliderNav-img bookSliderNav-img--max-width">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam">Harry Potter and the Philosopher's Stone (Harry Porter và hòn đá phù thủy)</a>
+                                            <span><a href="" class="author"> J.K. Rowling</a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$5.69</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="./assets/img/bestseller/alice-in-wonderland-alice-o-xu-so-than-tien-15532.jpg" alt="" class="bookSliderNav-img bookSliderNav-img--max-width">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam">Alice in Wonderland (Alice ở xứ sở thần tiên)</a>
+                                            <span><a href="" class="author">Lewis Carroll</a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$3.69</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="./assets/img/bestseller/the-alchemist-nha-gia-kim-15429.jpg "alt="" class="bookSliderNav-img bookSliderNav-img--max-width">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam">The Alchemist (Nhà Giả Kim)</a>
+                                            <span><a href="" class="author">Paulo Coelho</a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$7.69</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="./assets/img/bestseller/the-hobbit-anh-chang-hobbit-15497.jpg" alt="" class="bookSliderNav-img bookSliderNav-img--max-width">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam">The Hobbit (Anh chàng Hobbit)</a>
+                                            <span><a href="" class="author"> J. R. R. Tolkien</a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$5.69</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="./assets/img/bestseller/and-then-there-were-none-muoi-nguoi-da-den-nho-15511.jpg" alt="" class="bookSliderNav-img bookSliderNav-img--max-width">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam">And Then There Were None (Mười người da đen nhỏ)</a>
+                                            <span><a href="" class="author">Agatha Christie</a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$5.99</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="./assets/img/bestseller/the-little-prince-hoang-tu-be-15462.jpg" alt="" class="bookSliderNav-img bookSliderNav-img--max-width">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam">The Little Prince (Hoàng Tử Bé)</a>
+                                            <span><a href="" class="author"> Antoine de Saint-Exupéry</a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$6.99</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- new and trending -->
+                    <div class="bookSliderNav__super grid__col">
+                        <span><a href="" class="bookSliderNav__heading text-under--hover" >Mới & Thịnh hành</a></span>
+                        <span><a href="" class="bookSliderNav__desc"></a></span>
+                        <ul class="bookSliderNav__list grid__row">
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="./assets/img/new-trending/book1.jpg" alt="" class="bookSliderNav-img ">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam">Thế giới tươi đẹp, bạn đang ở đâu</a>
+                                            <span><a href="" class="author">Sally Rooney</a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$24.40</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="./assets/img/new-trending/book2.jpg" alt="" class="bookSliderNav-img ">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam">Đất nước tươi đẹp: Hồi ức về một thời thơ ấu</a>
+                                            <span><a href="" class="author">Qian Julie Wang (??)</a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$25.15</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="./assets/img/new-trending/book3.jpg" alt="" class="bookSliderNav-img ">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam">Táo không bao giờ rớt giá</a>
+                                            <span><a href="" class="author">Liane Moriarty</a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$25.19</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="./assets/img/new-trending/book4.jpg" alt="" class="bookSliderNav-img ">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam">Big Shot (Nhật ký của một đứa trẻ lém lỉnh tập 16)</a>
+                                            <span><a href="" class="author">Jeff Kinney</a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$13.87</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="./assets/img/new-trending/book5.jpg" alt="" class="bookSliderNav-img ">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam">Roar: vào nửa sau của cuộc đời bạn (trước khi quá muộn)</a>
+                                            <span><a href="" class="author">Michael Clinton</a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$22.66</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="./assets/img/new-trending/book6.jpg" alt="" class="bookSliderNav-img ">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam">Lemons on Friday: Tin cậy Chúa qua nỗi đau khổ lớn nhất của tôi</a>
+                                            <span><a href="" class="author">Mattie Jackson Selecman</a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$17.86</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="./assets/img/new-trending/book7.jpg" alt="" class="bookSliderNav-img ">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam">Lemons on Friday: Trusting God Through My Greatest Heartbreak</a>
+                                            <span><a href="" class="author">Mattie Jackson Selecman</a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$25.99</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- thriftBook deal -->
+                    <div class="bookSliderNav__super grid__col">
+                        <span><a href="" class="bookSliderNav__heading text-under--hover" >Sách ưu đãi tiết kiệm</a></span>
+                        <span><a href="" class="bookSliderNav__desc"></a></span>
+                        <ul class="bookSliderNav__list grid__row">
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="" alt="" class="bookSliderNav-img ">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam"></a>
+                                            <span><a href="" class="author"></a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$4.69</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="" alt="" class="bookSliderNav-img ">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam"></a>
+                                            <span><a href="" class="author"></a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$5.69</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="" alt="" class="bookSliderNav-img ">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam"></a>
+                                            <span><a href="" class="author"></a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$3.69</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="" alt="" class="bookSliderNav-img ">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam"></a>
+                                            <span><a href="" class="author"></a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$7.69</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="" alt="" class="bookSliderNav-img ">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam"></a>
+                                            <span><a href="" class="author"></a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$5.69</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="" alt="" class="bookSliderNav-img ">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam"></a>
+                                            <span><a href="" class="author"></a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$5.99</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="" alt="" class="bookSliderNav-img ">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam"></a>
+                                            <span><a href="" class="author"></a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$6.99</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- just arrvied -->
+                    <div class="bookSliderNav__super grid__col">
+                        <span><a href="" class="bookSliderNav__heading text-under--hover" >Vừa tới</a></span>
+                        <span><a href="" class="bookSliderNav__desc"></a></span>
+                        <ul class="bookSliderNav__list grid__row">
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="" alt="" class="bookSliderNav-img ">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam"></a>
+                                            <span><a href="" class="author"></a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$4.69</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="" alt="" class="bookSliderNav-img ">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam"></a>
+                                            <span><a href="" class="author"></a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$5.69</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="" alt="" class="bookSliderNav-img ">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam"></a>
+                                            <span><a href="" class="author"></a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$3.69</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="" alt="" class="bookSliderNav-img ">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam"></a>
+                                            <span><a href="" class="author"></a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$7.69</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="" alt="" class="bookSliderNav-img ">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam"></a>
+                                            <span><a href="" class="author"></a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$5.69</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="" alt="" class="bookSliderNav-img ">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam"></a>
+                                            <span><a href="" class="author"></a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$5.99</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="bookSliderNav_item">
+                                <div class="bookSliderNav_item-container grid__col">
+                                    <a href="" class="bookSliderNav_item-container-linked">
+                                        <div class="bookSliderNav_item-img">
+                                            <img src="" alt="" class="bookSliderNav-img ">
+                                        </div>
+                                        <div class="bookSliderNav_item-body grid__col">
+                                            <a href="" class="title-book text--hover max--line-clam"></a>
+                                            <span><a href="" class="author"></a></span>
+                                            <span>
+                                                <a href="" class="price-book">
+                                                    Price:
+                                                    <strong>$6.99</strong>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal js-modal">
+            <div class="modal__container" id="modal__container">
+                <div class="form-container sign-up-container">
+                    <form action="#">
+                        <h1 class="form-container--heading"> Create Account</h1>
+                        <div class="social-container">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <span>or use your email for registration</span>
+                        <input class="modal-form--control" type="text" placeholder="Name" />
+                        <input class="modal-form--control" type="email" placeholder="Email" />
+                        <input class="modal-form--control " type="password" placeholder="Password" />
+                        <button class="btn btn--sign">Sign Up</button>
+                    </form>
+                </div>
+                <div class="form-container sign-in-container">
+                    <form action="#">
+                        <h1 class="form-container--heading">Sign in</h1>
+                        <div class="social-container">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <span>or use your account</span>
+                        <input class="modal-form--control" type="email" placeholder="Email" />
+                        <input class="modal-form--control" type="password" placeholder="Password" />
+                        <a href="#">Forgot your password?</a>
+                        <button class="btn btn--sign">Sign In</button>
+                    </form>
+                </div>
+                <div class="overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h1 class="overlay-panel--heading">Welcome Back!</h1>
+                            <p>To keep connected with us please login with your personal info</p>
+                            <button class="btn btn--sign ghost" id="signIn">Sign In</button>
+                            </div>
+                            <div class="overlay-panel overlay-right">
+                            <h1 class="overlay-panel--heading">Hello, Friend!</h1>
+                            <p>Enter your personal details and start journey with us</p>
+                            <button class="btn btn--sign ghost" id="signUp">Sign Up</button>
+                            </div>
+                        </div>
+                </div>
+                <div class="modal__close" id="modal__close">
+                    <i class="modal__close-icon fas fa-times-circle"></i>
+                </div>
+            </div>
+        </div>
+        <div class="body"></div>
+        <div class="footer"></div>
+    </div>
+<script>
+
+    //click sign in and sign up
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container = document.getElementById('modal__container');
+
+
+    signUpButton.addEventListener('click', () => {
+        container.classList.add("right-panel-active");
+    });
+
+    signInButton.addEventListener('click', () => {
+        container.classList.remove("right-panel-active");
+    });
+
+    //open modal sign in and sign up
+    const modal = document.querySelector('.js-modal');
+    const modalCLose = document.getElementById('modal__close');
+    const accOut = document.querySelector('.js-btn--logout');
+
+
+    function showSignInAcc(){
+        modal.classList.add('open');
+        container.classList.remove("right-panel-active");
+
+    }
+
+    function showSignUpAcc(){
+        modal.classList.add('open');
+        container.classList.add("right-panel-active")
+    }
+    modalCLose.addEventListener('click', () => {
+        modal.classList.remove("open");
+
+    });
+
+    accOut.addEventListener('click',showSignUpAcc);
+
+   
+  
+</script>
+
+</body>
+</html>
