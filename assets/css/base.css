@@ -136,10 +136,9 @@ a{
     height: 100%;
     border-left: 1px solid #cacaca ;
 }
-
 .text--hover:hover{
-	color: #008755;
-	text-decoration: underline;
+    color: #008755;
+    text-decoration: underline;
 }
 
 .text-under--hover:hover{
@@ -156,3 +155,15 @@ a{
 	word-break: break-word;
 }
 
+
+.border--top{
+    border-top: 1px solid #ccc;
+}
+
+.border--bot{
+    border-bottom: 1px solid #ccc;
+}
+
+.text--upper{
+    text-transform: uppercase;
+}

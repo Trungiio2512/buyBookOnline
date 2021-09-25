@@ -1,10 +1,46 @@
+/* common */
+
+.super--size-m{
+	font-size: 1.6rem;
+}
+
+
+.super-menu a:hover{
+	color: var(--back-color);
+	text-decoration: underline;
+	-webkit-line-clamp: unset;
+}
+
+.super-menu h4{
+	margin: 0;
+	margin-bottom: 12px;
+}
+
+
+.super-menu a{
+	color: #363636;
+	line-height: 24px;
+	display: -webkit-box;
+	word-break: break-all;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	word-break: break-word;
+	font-size: 1.4rem;
+}
+
+.Submenu-rightOption span,
+.super-menu span{
+	display: block;
+	margin-top: 4px;
+}
 
 /* header */
 .header{
     display: flex;
     flex-direction: column;
     width: 100%;
-
     min-height: 126px;
 }
 
@@ -143,6 +179,7 @@
 
 .destopHeader__account-container:hover .subacc__list{
     display: block;
+	z-index: 10;
 }
 
 .subacc__list{
@@ -501,11 +538,6 @@ button.ghost {
 	font-weight: 500;
 }
 
-.Submenu-rightOption a:hover,
-.Submenu-FeaturedContentItem-link span:hover{
-	color: var(--back-color);
-	text-decoration: underline;
-}
 
 .Submenu-leftOption{
 	flex: 3;
@@ -523,42 +555,6 @@ button.ghost {
 	padding-right: 24px;
 	width: 25%;
 	margin-bottom: 16px;
-}
-
-.Submenu-leftOption h4{
-	margin: 0;
-	margin-bottom: 12px;
-}
-
-.Submenu-leftOption h4 a{
-	color: #363636;
-	
-}
-
-.Submenu-rightOption span,
-.Submenu-leftOption-item span{
-	display: block;
-	margin-top: 4px;
-}
-
-.Submenu-leftOption-item a{
-	color: #363636;
-	line-height: 24px;
-	display: -webkit-box;
-	word-break: break-all;
-	-webkit-line-clamp: 1;
-	-webkit-box-orient: vertical;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	word-break: break-word;
-	font-size: 1.4rem;
-}
-
-.Submenu-leftOption h4 a:hover,
-.Submenu-leftOption-item a:hover{
-	color: #008755;
-	text-decoration: underline;
-	-webkit-line-clamp: unset;
 }
 
 .Submenu-rightOption{
@@ -583,7 +579,6 @@ button.ghost {
 	color: #008755;
 	line-height: 24px;
 	font-weight: 400;
-
 }
 
 /* heading covid */
@@ -628,7 +623,9 @@ button.ghost {
 
 .homeMaketting__modal-img{
 	display: inherit;
+	
 }
+
 
 .homeMaketting-img{
 	width: 100%;
@@ -703,6 +700,10 @@ button.ghost {
 
 /* bookSlierNav */
 
+.bookSliderNav{
+	 margin-bottom: 24px;
+}
+
 .bookSliderNav__super{
 	margin-top: 24px;
 }
@@ -739,6 +740,7 @@ button.ghost {
 	min-height: 100%;
     min-width: 140px;
     object-fit: cover;
+	display: inline;
 	transition: transform linear 0.2s ;
 }
 
@@ -751,9 +753,14 @@ button.ghost {
 }
 
 .bookSliderNav_item-body{
-	min-height: 140px;
+	min-height: 120px;
 	padding: 5px 12px;
-	justify-content: space-between;
+	
+}
+
+.bookSliderNav_item-body div:first-child{
+	margin-top: 12px;
+	flex: 1;
 }
 
 .bookSliderNav_item-body span{
@@ -807,4 +814,242 @@ button.ghost {
 
 .price-book strong:hover{
 	text-decoration: underline;
+}
+
+/* Categaries */
+
+.homeCategories__heading {
+    font-size: 3rem;
+    line-height: 48px;
+    margin: 20px 0;
+    cursor: text;
+    color: #008575;
+}
+
+.homeCategories__body{
+	justify-content: space-between;
+}
+
+.homeCategories__item {
+    /* flex: 1; */
+	display: flex;
+    min-width: 300px;
+    flex: 0 0 30%;
+	margin-bottom: 32px;
+}
+
+.homeCategories-img{
+	max-width: 124px;
+	min-height: 184px;
+}
+
+.homeCategories__superMenu {
+    padding: 0 24px;
+    /* color: #008755; */
+}
+
+/* homeAbout Us */
+
+.homeAbout--padding{
+	padding: 40px 0;
+}
+
+.homeAbout__left,
+.homeAbout__right{
+	flex: 1;
+}
+
+.homeAbout__left{
+
+}
+
+.homeAbout__right{
+	justify-content: flex-end;
+}
+
+.homeAbout__left-info{
+	margin-bottom: 30px;
+}
+
+.homeAbout__left-info a{
+	color: #008575;
+    font-weight: 600;
+}
+	
+
+.homeAbout-heading {
+    font-size: 4rem;
+    color: #363636;
+    /* font-weight: 500; */
+    line-height: 5.2rem;
+	letter-spacing: 0.1rem;
+	margin-bottom: 44px;
+}
+
+.homeAbout-title{
+	font-size: 1.6rem;
+    color: #363636;
+    font-weight: 600;
+	letter-spacing: 0.1rem;
+}
+
+.homeAbout-desc{
+	font-size: 1.6rem;
+    line-height: 2.2rem;
+	letter-spacing: 0.1rem;
+    margin: 0;
+	text-align: justify;
+}
+
+.homeAbout--btn{
+	background-color: var(--back-color);
+	font-size: 2rem;
+	font-weight: 600;
+	padding: 8px 16px;
+	box-shadow: 0 0 10px 2px rgba(0,0,0,0.3);
+	cursor: pointer;
+	max-width: 200px;
+}
+
+.read-more--btn{
+	color: #008575;
+    font-weight: 600;
+	text-align: start;
+	
+}
+
+.homeAbout__right-img{
+	
+}
+
+.homeAbout--divied{
+	margin: 12px;
+}
+
+/* homeReview */
+.rateting{
+	 padding: 40px 0;
+	text-align: center;
+}
+
+.star{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: #ffa400;
+	clip-path: polygon(
+		50% 0,
+		61% 35%,
+		98% 35%,
+		68% 57%,
+		79% 91%,
+		50% 70%,
+		21% 91%,
+		32% 57%,
+		2% 35%,
+		39% 35%
+	);
+}
+
+.homReview__text {
+    /* text-align: center; */
+    /* padding: 0 57px; */
+    max-width: 800px;
+    font-size: 2.2rem;
+    line-height: 4rem;
+    margin: 0 auto;
+}
+
+.homeReview__author{
+	font-size: 1.8rem;
+}
+
+.homeReview__date {
+    font-size:1.8rem;
+    font-weight: 700;
+	margin: 0;	
+}
+
+.homeReview__stat{
+	position: relative;
+	justify-content: center;
+}
+
+.homeReview-divied{
+	position: absolute;
+	border-left: 2px solid #ccc;
+	height: 50%;
+	top: 40%;
+    right: 48.5%;
+}
+
+.homeReview__stat-time,
+.homeReview__stat-viewer{
+	font-size: 1.4rem;
+	line-height: 2rem;
+	padding: 4px 16px;
+	margin-top: 12px;
+	margin-bottom: 0;
+}
+
+.homeReview-link {
+    color: #008575;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* homeStats */
+
+.homeStats__stat{
+	width: 25%;
+}
+
+.homeStats--icon{
+	padding: 12px;
+    font-size: 8rem;
+	color: var(--back-color);
+}
+
+.homeStats__stat-content {
+    flex: 1;
+    padding: 14px;
+}
+
+.homeStats__stat-content h3{
+	font-size: 4rem;
+    line-height: 4rem;
+    margin: 0;
+}
+
+.homeStats__stat-content p{
+	margin: 0;
+    font-size: 1.4rem;
+	padding-top: 12px;
+    line-height: 2.2rem;
+	color: #363636;
+}
+
+/* footer link */
+
+.footer{
+	background-color: var(--back-color);
+}
+
+.footer-link__item {
+    flex: 1 1;
+}
+
+.footer-sidebar{
+	width: 312px;
+}
+
+.footer-link__item h3 {
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    color: #fff;
+	
+}
+
+.footer-link__item a{
+	color: #fff;
 }
