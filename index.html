@@ -15,7 +15,7 @@
 <body>
     <div id="app">
         <header class="header">
-            <div class="destopHeader grid">
+            <div id="destopheader" class="destopHeader grid">
                 <div class="destopHeader__left">
                     <div class="destopHeader__left-img">
                         <a href="">
@@ -25,6 +25,15 @@
                     <div class="destopHeader__left-search">
                         <div class="search">
                             <input type="text" name="" id="" placeholder="Search 13 million titles by title, author, or ISBN" class="destopHeader-search">
+                            <div class="search__history">
+                                <ul class="search__history-list">
+                                    <li class="search__history__item"><a href="">Sách lịch sử</a></li>
+                                    <li class="search__history__item"><a href="">Sách khooa học & viễn tưởng Trần Quang Trung</a></li>
+                                    <li class="search__history__item"><a href="">Sách bí ẩn, li kì % li kì</a></li>
+                                    <li class="search__history__item"><a href="">Truyện lãng mạn</a></li>
+                                </ul>
+                                <button class="btn btn--watch-all">Xem tất cả</button>
+                            </div>
                             <div class="destopHeader__left-btn">
                                 <a href="" class="">
                                     <button type="submit" class="destopHeader-btn">
@@ -286,7 +295,7 @@
                         </div>
                         <!-- betterseller -->
                         <div class="superMenu__item">
-                            <a href="">
+                            <a href="#bestsale  ">
                                 <span class="superMenu__item-link text--hover">
                                     Bán chạy nhất
                                     
@@ -295,7 +304,7 @@
                         </div>
                         <!-- new and trending -->
                         <div class="superMenu__item">
-                            <a href="">
+                            <a href="#new-trending">
                                 <span class="superMenu__item-link text--hover">
                                     Mới & Thịnh hành
                                   
@@ -418,7 +427,7 @@
             <div class="bookSliderNav">
                 <div class="bookSliderNav grid ">
                     <!-- bestseller -->
-                    <div class="bookSliderNav__super grid__col">
+                    <div id="bestsale" class="bookSliderNav__super grid__col">
                         <span><a href="" class="bookSliderNav__heading text-under--hover" >Bán chạy nhất</a></span>
                         <span><a href="" class="bookSliderNav__desc">Sách bạn chạy nhất năm nay</a></span>
                         <ul class="bookSliderNav__list grid__row">
@@ -565,7 +574,7 @@
                         </ul>
                     </div>
                     <!-- new and trending -->
-                    <div class="bookSliderNav__super grid__col">
+                    <div id="new-trending" class="bookSliderNav__super grid__col">
                         <span><a href="" class="bookSliderNav__heading text-under--hover" >Mới & Thịnh hành</a></span>
                         <span><a href="" class="bookSliderNav__desc"></a></span>
                         <ul class="bookSliderNav__list grid__row">
@@ -1440,44 +1449,48 @@
             <div class="footer-container grid ">
                 <div class="footer-content grid__row">
                     <div class="footer-link grid__row">
-                        <div class="footer-link__item grid__col">
+                        <div class="footer-link__item ">
                             <h3>Danh mục phổ biến</h3>
-                            <span><a href="">Trẻ em</a></span>
-                            <span><a href="">Thanh thiếu niên và Thanh niên</a></span>
-                            <span><a href="">Tự lực</a></span>
-                            <span><a href="">Văn học & viễn tưởng</a></span>
-                            <span><a href="">Bí ẩn & kinh dị</a></span>
-                            <span><a href="">Khoa học viễn tưởng và giả tưởng</a></span>
-                            <span><a href="">lãng mạn</a></span>
-                            <span><a href="">Sách in khổ lớn</a></span>
-                            <span><a href="">Sách hiếm & Sưu tầm</a></span>
+                            <ul>
+                                <li><a href="" class="text-under--hover">Trẻ em</a></li>
+                                <li><a href="" class="text-under--hover">Thanh thiếu niên và Thanh niên</a></li>
+                                <li><a href="" class="text-under--hover">Tự lực</a></li>
+                                <li><a href="" class="text-under--hover">Văn học & viễn tưởng</a></li>
+                                <li><a href="" class="text-under--hover">Bí ẩn & kinh dị</a></li>
+                                <li><a href="" class="text-under--hover">Khoa học viễn tưởng và giả tưởng</a></li>
+                                <li><a href="" class="text-under--hover">lãng mạn</a></li>
+                                <li><a href="" class="text-under--hover">Sách in khổ lớn</a></li>
+                                <li><a href="" class="text-under--hover">Sách hiếm & Sưu tầm</a></li>
+                            </ul>
                         </div>
-                        <div class="footer-link__item grid__col">
+                        <div class="footer-link__item ">
                             <h3>Tài khoản của tôi</h3>
-                            <span><a href="">Cài đặt</a></span>
-                            <span><a href="">Giỏ hàng</a></span>
-                            <span><a href="">Lịch sử đơn hàng</a></span>
-                            <span><a href="">Danh sách mong muốn</a></span>
+                            <ul>
+                                <li><a href="" class="text-under--hover">Cài đặt</a></li>
+                                <li><a href="" class="text-under--hover">Giỏ hàng</a></li>
+                                <li><a href="" class="text-under--hover">Lịch sử đơn hàng</a></li>
+                                <li><a href="" class="text-under--hover">Danh sách mong muốn</a></li>
+                            </ul>
                         </div>
-                        <div class="footer-link__item grid__col">
+                        <div class="footer-link__item ">
                             <h3>Trợ giúp nhanh</h3>
                             <ul>
-                                <li><a href="">Trợ giúp & Hỗ trợ</a></li>
-                                <li><a href="">Chi phí vận chuyển</a></li>
-                                <li><a href="">Thanh toán</a></li>
-                                <li><a href="">Chính sách hoàn trả</a></li>
-                                <li><a href="">Liên hệ chúng tôi</a></li>
+                                <li><a href="" class="text-under--hover">Trợ giúp & Hỗ trợ</a></li>
+                                <li><a href="" class="text-under--hover">Chi phí vận chuyển</a></li>
+                                <li><a href="" class="text-under--hover">Thanh toán</a></li>
+                                <li><a href="" class="text-under--hover">Chính sách hoàn trả</a></li>
+                                <li><a href="" class="text-under--hover">Liên hệ chúng tôi</a></li>
 
                             </ul>
                         </div>
                         <div class="footer-link__item grid__col">
                             <h3>Trang mạng</h3>
                             <ul>
-                                <li><a href="">Nói với một người bạn</a></li>
-                                <li><a href="">Lời chứng thực</a></li>
-                                <li><a href="">Thẻ quà tặng</a></li>
-                                <li><a href="">Blog</a></li>
-                                <li><a href="">Xem trang web dành cho thiết bị di động</a></li>
+                                <li><a href="" class="text-under--hover">Nói với một người bạn</a></li>
+                                <li><a href="" class="text-under--hover">Lời chứng thực</a></li>
+                                <li><a href="" class="text-under--hover">Thẻ quà tặng</a></li>
+                                <li><a href="" class="text-under--hover">Blog</a></li>
+                                <li><a href="" class="text-under--hover">Xem trang web dành cho thiết bị di động</a></li>
 
                             </ul>
                         </div>
@@ -1486,24 +1499,28 @@
                         <h3>Theo chúng tôi</h3>
                         <div class="footer-social">
                             <a href="" target="_blank" title="Thích chung tôi trên facebook">
-                                <i class="fab fa-facebook-f"></i>
+                                <i class="footer-social__icon fab fa-facebook-f"></i>
                             </a>
                             <a href="" target="_blank" title="Thích chung tôi trên twitter">
-                                <i class="fab fa-twitter"></i>
+                                <i class="footer-social__icon fab fa-twitter"></i>
                             </a>
                             <a href="" target="_blank" title="Thích chung tôi trên pinterest">
-                                <i class="fab fa-pinterest-p"></i>
+                                <i class="footer-social__icon fab fa-pinterest-p"></i>
                             </a>
                             <a href="" target="_blank" title="Thích chung tôi trên tumblr">
-                                <i class="fab fa-tumblr"></i>
+                                <i class="footer-social__icon fab fa-tumblr"></i>
                             </a>
                             <a href="" target="_blank" title="Thích chung tôi trên instagram">
-                                <i class="fab fa-instagram-square"></i>
+                                <i class="footer-social__icon fab fa-instagram-square"></i>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="scroll-up">
+            <a href="#destopheader" class="srcoll-up--header"><i class="scroll-up-icon fas fa-arrow-up"></i> </a>
         </div>
     </div>
 <script>
