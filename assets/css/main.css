@@ -43,6 +43,11 @@
     width: 100%;
     min-height: 126px;
 }
+/* main-container */
+
+.main-container.closeMainContainer{
+	display: none;
+}
 
 
 /* header-left */
@@ -866,16 +871,18 @@ button.ghost {
 }
 
 .price-book{
-	
+	/* text-align: start; */
+	border-radius: 4px;
+	color: var(--white-color);
 }
 
 .price-book strong{
-	color: #F73116;
 	font-weight: 700;
 }
 
-.price-book strong:hover{
+.price-book:hover{
 	text-decoration: underline;
+	background-color: #FA4D44;
 }
 
 /* Categaries */
