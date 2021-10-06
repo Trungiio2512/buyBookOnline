@@ -64,16 +64,42 @@
                        </div>
                        <div class="divied"></div>
                        <div class="destopHeader__cart">
-                            <div class="destopHeader__cart destopHeader__cart--love">
+                            <div class="destopHeader__cart destopHeader__cart--love destopHeader__cart--font-36">
                                 <a href="" class="">    
                                     <i class="destopHeader__cart-icon--love fas fa-heart"></i>
                                 </a>
                             </div>
                             <div class="destopHeader__cart destopHeader__cart--book">
-                                <a href="" class="">
-                                    <i  class="fas fa-shopping-cart destopHeader__cart-icon--book"></i>
-                                </a>
+                                <i  class="fas fa-shopping-cart destopHeader__cart-icon--book destopHeader__cart--font-36"></i>
                                 <div class="quantity-buy--book">0</div>
+                                <ul class="destopHeader__cart-list">
+                                    <!-- when no products -->
+                                    <!-- no-cart : destopHeader__cart-no-cart-img -->
+                                    <!-- has cart: destopHeader__cart-img -->
+                                    <img src="https://uchimart.com/assets/images/no-cart.png" class="destopHeader__cart-no-cart-img" alt="">
+                                     <!-- no-cart : destopHeader__cart-no-cart-notice -->
+                                    <!-- has cart: destopHeader__cart-notice -->
+                                    <span class="destopHeader__cart-no-cart-notice">Chưa có sản phẩm</span>
+                                    <!-- has products -->
+                                    <li class="destopHeader__cart-item">
+                                        <img src="./assets/img/Category/5165GG7QHDL._SL500_.jpg" alt="" class="destopHeader__cart-img">
+                                        <div class="destopHeader__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h5>
+                                                <div class="header__cart-item-price-wrap">
+
+                                                    <span class="header__cart-item-price">2.000.000đ</span>
+                                                    <span class="header__cart-item-multi">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-desc">Phân loại : Bạc</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                        </div>
                     
@@ -444,10 +470,10 @@
                                             <div><a href="" class="title-book text--hover max--line-clam">Don Quixote (Đôn-ki-hô-tê)</a></div>
                                             <span><div href="" class="author">Miguel de Cervantes</div></span>
                                             
-                                                <button class="price-book">
+                                                <a class="price-book">
                                                     Buy:
                                                     <strong>$4.69</strong>
-                                                </diviv>
+                                                </a>
                                             
                                         </div>
                                     </a>
@@ -465,10 +491,10 @@
                                             <div><a href="" class="title-book text--hover max--line-clam">Harry Potter and the Philosopher's Stone (Harry Porter và hòn đá phù thủy)</a></div>
                                             <span><a href="" class="author"> J.K. Rowling</a></span>
                                             
-                                                <button class="price-book">
+                                                <a class="price-book">
                                                     Buy:
                                                     <strong>$5.69</strong>
-                                                </button>
+                                                </a>
                                             
                                         </div>
                                     
@@ -485,10 +511,10 @@
                                             <div><a href="" class="title-book text--hover max--line-clam">Alice in Wonderland (Alice ở xứ sở thần tiên)</a></div>
                                             <span><a href="" class="author">Lewis Carroll</a></span>
                                             
-                                                <button class="price-book">
+                                                <a class="price-book">
                                                     Buy:
                                                     <strong>$3.69</strong>
-                                                </button>
+                                                </a>
                                             
                                         </div>
                                    
@@ -505,10 +531,10 @@
                                             <div><a href="" class="title-book text--hover max--line-clam">The Alchemist (Nhà Giả Kim)</a></div>
                                             <span><a href="" class="author">Paulo Coelho</a></span>
                                             
-                                                <button class="price-book">
+                                                <a class="price-book">
                                                     Buy:
                                                     <strong>$7.69</strong>
-                                                </button>
+                                                </a>
                                             
                                         </div>
                                     
@@ -525,10 +551,10 @@
                                             <div><a href="" class="title-book text--hover max--line-clam">The Hobbit (Anh chàng Hobbit)</a></div>
                                             <span><a href="" class="author"> J. R. R. Tolkien</a></span>
                                             
-                                                <button class="price-book">
+                                                <a class="price-book">
                                                     Buy:
                                                     <strong>$5.69</strong>
-                                                </button>
+                                                </a>
                                             
                                         </div>
                                     
@@ -545,10 +571,10 @@
                                             <div><a href="" class="title-book text--hover max--line-clam">And Then There Were None (Mười người da đen nhỏ)</a></div>
                                             <span><a href="" class="author">Agatha Christie</a></span>
                                             
-                                                <button class="price-book">
+                                                <a class="price-book">
                                                     Buy:
                                                     <strong>$5.99</strong>
-                                                </button>
+                                                </a>
                                             
                                         </div>
                                    
@@ -565,10 +591,10 @@
                                             <div><a href="" class="title-book text--hover max--line-clam">The Little Prince (Hoàng Tử Bé)</a></div>
                                             <span><a href="" class="author"> Antoine de Saint-Exupéry</a></span>
                                             
-                                                <button class="price-book">
+                                                <a class="price-book">
                                                     Buy:
                                                     <strong>$6.99</strong>
-                                                </button>
+                                                </a>
                                             
                                         </div>
                                    
@@ -592,10 +618,10 @@
                                             <div><a href="" class="title-book text--hover max--line-clam">Thế giới tươi đẹp, bạn đang ở đâu</a></div>
                                             <span><a href="" class="author">Sally Rooney</a></span>
                                             
-                                                <button class="price-book">
+                                                <a class="price-book">
                                                     Buy:
                                                     <strong>$24.40</strong>
-                                                </button>
+                                                </a>
                                             
                                         </div>
                                    
@@ -612,10 +638,10 @@
                                             <div><a href="" class="title-book text--hover max--line-clam">Đất nước tươi đẹp: Hồi ức về một thời thơ ấu</a></div>
                                             <span><a href="" class="author">Qian Julie Wang (??)</a></span>
                                             
-                                                <button class="price-book">
+                                                <a class="price-book">
                                                     Buy:
                                                     <strong>$25.15</strong>
-                                                </button>
+                                                </a>
                                             
                                         </div>
                                    
@@ -632,10 +658,10 @@
                                             <div><a href="" class="title-book text--hover max--line-clam">Táo không bao giờ rớt giá</a></div>
                                             <span><a href="" class="author">Liane Moriarty</a></span>
                                             
-                                                <button class="price-book">
+                                                <a class="price-book">
                                                     Buy:
                                                     <strong>$25.19</strong>
-                                                </button>
+                                                </a>
                                             
                                         </div>
                                     
@@ -652,10 +678,10 @@
                                             <div><a href="" class="title-book text--hover max--line-clam">Big Shot (Nhật ký của một đứa trẻ lém lỉnh tập 16)</a></div>
                                             <span><a href="" class="author">Jeff Kinney</a></span>
                                             
-                                                <button class="price-book">
+                                                <a class="price-book">
                                                     Buy:
                                                     <strong>$13.87</strong>
-                                                </button>
+                                                </a>
                                             
                                         </div>
                                     
@@ -672,10 +698,10 @@
                                             <div><a href="" class="title-book text--hover max--line-clam">Roar: vào nửa sau của cuộc đời bạn (trước khi quá muộn)</a></div>
                                             <span><a href="" class="author">Michael Clinton</a></span>
                                             
-                                                <button class="price-book">
+                                                <a class="price-book">
                                                     Buy:
                                                     <strong>$22.66</strong>
-                                                </button>
+                                                </a>
                                             
                                         </div>
                                   
@@ -692,10 +718,10 @@
                                             <div><a href="" class="title-book text--hover max--line-clam">Lemons on Friday: Tin cậy Chúa qua nỗi đau khổ lớn nhất của tôi</a></div>
                                             <span><a href="" class="author">Mattie Jackson Selecman</a></span>
                                             
-                                                <button class="price-book">
+                                                <a class="price-book">
                                                     Buy:
                                                     <strong>$17.86</strong>
-                                                </button>
+                                                </a>
                                             
                                         </div>
                                     
@@ -712,10 +738,10 @@
                                             <div><a href="" class="title-book text--hover max--line-clam">Lemons on Friday: Trusting God Through My Greatest Heartbreak</a></div>
                                             <span><a href="" class="author">Mattie Jackson Selecman</a></span>
                                             
-                                                <button class="price-book">
+                                                <a class="price-book">
                                                     Buy:
                                                     <strong>$25.99</strong>
-                                                </button>
+                                                </a>
                                             
                                         </div>
                                   
@@ -739,10 +765,10 @@
                                             <div><a href="" class="title-book text--hover max--line-clam">Một nếp nhăn trong thời gian</a></div>
                                             <span><a href="" class="author">Madeleine L'Engle</a></span>
                                             
-                                                <button class="price-book">
+                                                <a class="price-book">
                                                     Buy:
                                                     <strong>$3.59</strong>
-                                                </button>
+                                                </a>
                                             
                                         </div>
                                    
@@ -759,10 +785,10 @@
                                         <div><a href="" class="title-book text--hover max--line-clam">Tường thuật về cuộc đời của Frederick Douglass, một nô lệ Mỹ</a></div>
                                         <span><a href="" class="author">Frederick Douglass</a></span>
                                         
-                                            <button class="price-book">
+                                            <a class="price-book">
                                                 Buy:
                                                 <strong>$3.59</strong>
-                                            </button>
+                                            </a>
                                         
                                     </div>
                                     
@@ -779,10 +805,10 @@
                                             <div><a href="" class="title-book text--hover max--line-clam">Cuộc sống bí mật của ong</a></div>
                                             <span><a href="" class="author">Sue Monk Kidd</a></span>
                                             
-                                                <button class="price-book">
+                                                <a class="price-book">
                                                     Buy:
                                                     <strong>$3.59</strong>
-                                                </button>
+                                                </a>
                                             
                                         </div>
                                    
@@ -799,10 +825,10 @@
                                             <div><a href="" class="title-book text--hover max--line-clam">Hươu cao cổ không thể nhảy</a></div>
                                             <span><a href="" class="author">Giles Andreae</a></span>
                                             
-                                                <button class="price-book">
+                                                <a class="price-book">
                                                     Buy:
                                                     <strong>$3.69</strong>
-                                                </button>
+                                                </a>
                                             
                                         </div>
                                 </div>
@@ -818,10 +844,10 @@
                                             <div><a href="" class="title-book text--hover max--line-clam">Thần thoại</a></div>
                                             <span><a href="" class="author">Edith Hamilton</a></span>
                                             
-                                                <button class="price-book">
+                                                <a class="price-book">
                                                     Buy:
                                                     <strong>$5.69</strong>
-                                                </button>
+                                                </a>
                                             
                                         </div>
                                 </div>
@@ -837,10 +863,10 @@
                                             <div><a href="" class="title-book text--hover max--line-clam">Sổ tay xuất bản của Hiệp hội Tâm lý Hoa Kỳ</a></div>
                                             <span><a href="" class="author">Hiệp hội tâm lý Mỹ</a></span>
                                             
-                                                <button class="price-book">
+                                                <a class="price-book">
                                                     Buy:
                                                     <strong>$4.99</strong>
-                                                </button>
+                                                </a>
                                             
                                         </div>
                                 </div>
@@ -856,10 +882,10 @@
                                             <div><a href="" class="title-book text--hover max--line-clam">Lễ hội cho quạ</a></div>
                                             <span><a href="" class="author">George RR Martin</a></span>
                                             
-                                                <button class="price-book">
+                                                <a class="price-book">
                                                     Buy:
                                                     <strong>$4.69</strong>
-                                                </button>
+                                                </a>
                                             
                                         </div>
                                 </div>
@@ -882,10 +908,10 @@
                                             <div><a href="" class="title-book text--hover max--line-clam">Chúa tể trên không</a></div>
                                             <span><a href="" class="author">William Golding</a></span>
                                             
-                                                <button class="price-book">
+                                                <a class="price-book">
                                                     Buy:
                                                     <strong>$4.19</strong>
-                                                </button>
+                                                </a>
                                             
                                         </div>
                                 </div>
@@ -901,10 +927,10 @@
                                         <div><a href="" class="title-book text--hover max--line-clam">Mạng lươi của Charlotte</a></div>
                                         <span><a href="" class="author">EB trắng</a></span>
                                         
-                                            <button class="price-book">
+                                            <a class="price-book">
                                                 Buy:
                                                 <strong>$3.59</strong>
-                                            </button>
+                                            </a>
                                         
                                     </div>
                                 </div>
@@ -920,10 +946,10 @@
                                         <div><a href="" class="title-book text--hover max--line-clam">Trong máu lạnh</a></div>
                                         <span><a href="" class="author">Truman Capote</a></span>
                                         
-                                            <button class="price-book">
+                                            <a class="price-book">
                                                 Buy:
                                                 <strong>$3969</strong>
-                                            </button>
+                                            </a>
                                         
                                     </div>
                                 </div>
@@ -939,10 +965,10 @@
                                         <div><a href="" class="title-book text--hover max--line-clam">Thành phố của Bones</a></div>
                                         <span><a href="" class="author">Cassandra Clare</a></span>
                                         
-                                            <button class="price-book">
+                                            <a class="price-book">
                                                 Buy:
                                                 <strong>$3.99</strong>
-                                            </button>
+                                            </a>
                                         
                                     </div>
                                 </div>
@@ -958,10 +984,10 @@
                                         <div><a href="" class="title-book text--hover max--line-clam">Battlefield of the Mind: Chiến thắng trận chiến trong tâm trí bạn</a></div>
                                         <span><a href="" class="author">Joyce Meyer</a></span>
                                         
-                                            <button class="price-book">
+                                            <a class="price-book">
                                                 Buy:
                                                 <strong>$4.69</strong>
-                                            </button>
+                                            </a>
                                         
                                     </div>
                                 </div>
@@ -977,10 +1003,10 @@
                                         <div><a href="" class="title-book text--hover max--line-clam">Con đường đom đóm</a></div>
                                         <span><a href="" class="author">Kristin Hannah</a></span>
                                         
-                                            <button class="price-book">
+                                            <a class="price-book">
                                                 Buy:
                                                 <strong>$5.99</strong>
-                                            </button>
+                                            </a>
                                         
                                     </div>
                                 </div>
@@ -996,10 +1022,10 @@
                                         <div><a href="" class="title-book text--hover max--line-clam">Ivan duy nhất</a></div>
                                         <span><a href="" class="author">Katherine Applegate</a></span>
                                         
-                                            <button class="price-book">
+                                            <a class="price-book">
                                                 Buy:
                                                 <strong>$3.99</strong>
-                                            </button>
+                                            </a>
                                         
                                     </div>
                                 </div>
@@ -1022,10 +1048,10 @@
                                             <div><a href="" class="title-book text--hover max--line-clam">Harry Potter và phòng chứa bí mật</a></div>
                                             <span><a href="" class="author">JK Rowling</a></span>
                                             
-                                                <button class="price-book">
+                                                <a class="price-book">
                                                     Buy:
                                                     <strong>$3.39</strong>
-                                                </button>
+                                                </a>
                                             
                                         </div>
                                 </div>
@@ -1041,10 +1067,10 @@
                                         <div><a href="" class="title-book text--hover max--line-clam">Harry Potter và hoàng tử lai</a></div>
                                         <span><a href="" class="author">JK Rowling</a></span>
                                         
-                                            <button class="price-book">
+                                            <a class="price-book">
                                                 Buy:
                                                 <strong>$4.19</strong>
-                                            </button>
+                                            </a>
                                         
                                     </div>
                                 </div>
@@ -1060,10 +1086,10 @@
                                         <div><a href="" class="title-book text--hover max--line-clam">The Goldfinch</a></div>
                                         <span><a href="" class="author">Donna Tartt</a></span>
                                         
-                                            <button class="price-book">
+                                            <a class="price-book">
                                                 Buy:
                                                 <strong>$4.05</strong>
-                                            </button>
+                                            </a>
                                         
                                     </div>
                                 </div>
@@ -1079,10 +1105,10 @@
                                         <div><a href="" class="title-book text--hover max--line-clam">Slaughterhouse-Five, hay The Children Crusade: A Duty-Dance with Death</a></div>
                                         <span><a href="" class="author">Kurt Vonnegut Jr.</a></span>
                                         
-                                            <button class="price-book">
+                                            <a class="price-book">
                                                 Buy:
                                                 <strong>$3.99</strong>
-                                            </button>
+                                            </a>
                                         
                                     </div>
                                 </div>
@@ -1098,10 +1124,10 @@
                                         <div><a href="" class="title-book text--hover max--line-clam">Cuộc thi Giáng sinh hay nhất từ ​​trước đến nay</a></div>
                                         <span><a href="" class="author">Barbara Robinson</a></span>
                                         
-                                            <button class="price-book">
+                                            <a class="price-book">
                                                 Buy:
                                                 <strong>$3.99</strong>
-                                            </button>
+                                            </a>
                                         
                                     </div>
                                 </div>
@@ -1117,10 +1143,10 @@
                                         <div><a href="" class="title-book text--hover max--line-clam">Lời nguyền của Titan</a></div>
                                         <span><a href="" class="author">Rick Riordan</a></span>
                                         
-                                            <button class="price-book">
+                                            <a class="price-book">
                                                 Buy:
                                                 <strong>$4.99</strong>
-                                            </button>
+                                            </a>
                                         
                                     </div>
                                 </div>
@@ -1136,10 +1162,10 @@
                                         <div><a href="" class="title-book text--hover max--line-clam">Anh hùng bị mất</a></div>
                                         <span><a href="" class="author">Rick Riordan</a></span>
                                         
-                                            <button class="price-book">
+                                            <a class="price-book">
                                                 Buy:
                                                 <strong>$3.99</strong>
-                                            </button>
+                                            </a>
                                         
                                     </div>
                                 </div>

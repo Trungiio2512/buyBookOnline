@@ -51,6 +51,15 @@ html{
     }
 }
 
+@keyframes grow{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
 .img--max-hight{
     max-height: 145px;
 }
@@ -125,7 +134,6 @@ a{
     background-color: transparent;
     outline: none;
     text-decoration: none;
-
 }
 
 .divied{
