@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/icon" href="./assets/img/favicon/images.jfif"/>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/buybook.css">
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            <div id="destopheader" class="destopHeader grid">
+                <div class="destopHeader__left">
+                    <div class="destopHeader__left-img">
+                        <a href="./index.html">
+                            <img src="assets/img/destopHeader--img/tblogo-green_20200225.svg" alt="" class="destopHeader-img">
+                        </a>
+                    </div>
+                    <div class="destopHeader__left-search">
+                        <div class="search">
+                            <input type="text" name="" id="" placeholder="Search 13 million titles by title, author, or ISBN" class="destopHeader-search">
+                            <div class="search__history">
+                                <ul class="search__history-list">
+                                    <li class="search__history__item"><a href="">Sách lịch sử</a></li>
+                                    <li class="search__history__item"><a href="">Sách khooa học & viễn tưởng Trần Quang Trung</a></li>
+                                    <li class="search__history__item"><a href="">Sách bí ẩn, li kì % li kì</a></li>
+                                    <li class="search__history__item"><a href="">Truyện lãng mạn</a></li>
+                                </ul>
+                                <button class="btn btn--watch-all">Xem tất cả</button>
+                            </div>
+                            <div class="destopHeader__left-btn">
+                                <a href="" class="">
+                                    <button type="submit" class="destopHeader-btn">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="destopHeader__right">
+                       <div class="destopHeader__account">
+                        <div class="destopHeader__account-container">
+                            <button onclick="showSignInAcc();" class="btn btn--login">  
+                                Đăng nhập
+                                <i class="more-icon fas fa-caret-down"></i>
+                            </button>
+                          
+                           <ul class="subacc__list">
+                               <li><a href="" class="subacc__item">Tạo tài khoản</a></li>
+                               <li><a href="" class="subacc__item">Danh sách mong muốn</a></li>
+                               <li><a href="" class="subacc__item">Đơn hàng</a></li>
+                               <li><a href="" class="subacc__item">Trợ giúp & Hỗ trợ</a></li>
+                               <li><a class="btn btn--logout js-btn--logout">Đăng xuất</a></li>
+                           </ul>
+                        </div>
+                       </div>
+                       <div class="divied"></div>
+                       <div class="destopHeader__cart">
+                            <div class="destopHeader__cart destopHeader__cart--love destopHeader__cart--font-36">
+                                <a href="" class="">    
+                                    <i class="destopHeader__cart-icon--love fas fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="destopHeader__cart destopHeader__cart--book">
+                                <i  class="fas fa-shopping-cart destopHeader__cart-icon--book destopHeader__cart--font-36"></i>
+                                <div class="quantity-buy--book">0</div>
+                                <ul class="destopHeader__cart-list">
+                                    <!-- when no products -->
+                                    <!-- no-cart : destopHeader__cart-no-cart-img -->
+                                    <!-- has cart: destopHeader__cart-img -->
+                                    <img src="https://uchimart.com/assets/images/no-cart.png" class="destopHeader__cart-no-cart-img" alt="">
+                                     <!-- no-cart : destopHeader__cart-no-cart-notice -->
+                                    <!-- has cart: destopHeader__cart-notice -->
+                                    <span class="destopHeader__cart-no-cart-notice">Chưa có sản phẩm</span>
+                                    <!-- has products -->
+                                    <li class="destopHeader__cart-item">
+                                        <img src="./assets/img/Category/5165GG7QHDL._SL500_.jpg" alt="" class="destopHeader__cart-img">
+                                        <div class="destopHeader__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h5>
+                                                <div class="header__cart-item-price-wrap">
+
+                                                    <span class="header__cart-item-price">2.000.000đ</span>
+                                                    <span class="header__cart-item-multi">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-desc">Phân loại : Bạc</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                       </div>
+                    
+                </div>
+            </div>
+            <div class="destopNavigation">
+                <div class="superMenu superMenu--border-bot grid">
+                    <div class="superMenu ">
+                        <!-- menu img -->
+                        <div class="superMenu__item">
+                            <a href="">
+                                <span class="superMenu__item-link text--hover">
+                                    Đặc sắc
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <div class="MenuDropdown-container">
+                                <div class="MenuDropdown-submenu">
+                                    <div class="Submenu-container Submenu-container-FeaturedContent">
+                                        <div class="Submenu-FeaturedContentItem">
+                                            <a href="" class="Submenu-FeaturedContentItem-link ">
+                                                <img src="./assets/img/navbar-img/IndieAugust-DT-S_d6c4219c.jpg" alt="">
+                                                <span class="text--hover">Indie Next</span>
+                                            </a>
+                                        </div>
+                                        <div class="Submenu-FeaturedContentItem">
+                                            <a href="" class="Submenu-FeaturedContentItem-link">
+                                                <img src="./assets/img/navbar-img/DT-S-_264x144_d1ea7747.jpg" alt="">
+                                                <span class="text--hover">Sách nâng cao dành cho người đọc</span>
+                                            </a>
+                                        </div>
+                                        <div class="Submenu-FeaturedContentItem">
+                                            <a href="" class="Submenu-FeaturedContentItem-link">
+                                                <img src="./assets/img/navbar-img/DT-S-_264x144_83787454.jpg" alt="">
+                                                <span class="text--hover">Nhìn lại mùa hè</span>
+                                            </a>
+                                        </div>
+                                        <div class="Submenu-FeaturedContentItem">
+                                            <a href="" class="Submenu-FeaturedContentItem-link">
+                                                <img src="./assets/img/navbar-img/DT-S--264x144_858a71cd.jpg" alt="">
+                                                <span class="text--hover">Bán chạy nhất</span>
+                                            </a>
+                                        </div>
+                                        <div class="Submenu-FeaturedContentItem">
+                                            <a href="" class="Submenu-FeaturedContentItem-link">
+                                                <img src="./assets/img/navbar-img/BestSellers-DT-S_70ba2b4b.jpg" alt="">
+                                                <span class="text--hover">Truyện</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- menu sach -->
+                        <div class="superMenu__item">
+                            <a href="">
+                                <span class="superMenu__item-link text--hover">
+                                    Sách
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <div class="MenuDropdown-container">
+                                <div class="MenuDropdown-submenu">
+                                        <div class="Submenu-container">
+                                            <ul class="Submenu-leftOption grid__row SubMenu-leftOption-list ">
+                                                <li class="Submenu-leftOption-item super-menu">
+                                                    <h4><a href="">Tiểu sử & Hồi ức</a></h4>
+                                                    <span><a href="">Nghệ thuật & Văn học</a></span>
+                                                    <span><a href="">Văn Hóa</a></span>
+                                                    <span><a href="">Châu lục</a></span>
+                                                    <span><a href="">Lịch sử</a></span>
+                                                    <span><a href="">Lãnh đạo & những người đáng chú ý</a></span>
+                                                    <span><a href="">Mua sắm tất cả</a></span>
+                                                </li>
+                                                <li class="Submenu-leftOption-item super-menu">
+                                                    <h4><a href="">Trẻ em</a></h4>
+                                                    <span><a href="">Phiêu lưu hành động</a></span>
+                                                    <span><a href="">Loài vật</a></span>
+                                                    <span><a href="">Ô tô & Xe tải</a></span>
+                                                    <span><a href="">Kinh điển</a></span>
+                                                    <span><a href="">Sách hoạt động</a></span>
+                                                    <span><a href="">Mua sắm tất cả</a></span>
+                                                </li>
+                                                <li class="Submenu-leftOption-item super-menu">
+                                                    <h4><a href="">Giáo dục & Thảm khỏa</a></h4>
+                                                    <span><a href="">Dạnh mục</a></span>
+                                                    <span><a href="">Trường cao đẳng</a></span>
+                                                    <span><a href="">Tham khảo</a></span>
+                                                    <span><a href="">Từ điển</a></span>
+                                                    <span><a href="">Giáo dục</a></span>
+                                                    <span><a href="">Mua sắm tất cả</a></span>
+                                                </li>
+                                                <li class="Submenu-leftOption-item super-menu">
+                                                    <h4><a href="">Lịch sử</a></h4>
+                                                    <span><a href="">Người cổ đại</a></span>
+                                                    <span><a href="">Người Châu Phi</a></span>
+                                                    <span><a href="">Châu Á</a></span>
+                                                    <span><a href="">Lịch sử đen</a></span>
+                                                    <span><a href="">Người Canada</a></span>
+                                                    <span><a href="">Mua sắm tất cả</a></span>
+                                                </li>
+                                                <li class="Submenu-leftOption-item super-menu">
+                                                    <h4><a href="">Văn học & Viễn tưởng</a></h4>
+                                                    <span><a href="">Tuyển tập</a></span>
+                                                    <span><a href="">Kinh điển</a></span>
+                                                    <span><a href="">Đông thời</a></span>
+                                                    <span><a href="">Ngoại ngữ</a></span>
+                                                    <span><a href="">Thể loại hư cấu</a></span>
+                                                    <span><a href="">Mua sắm tất cả</a></span>
+                                                </li>
+                                                <li class="Submenu-leftOption-item super-menu">
+                                                    <h4><a href="">Bí ẩn & Li kì</a></h4>
+                                                    <span><a href="">Âm mưu</a></span>
+                                                    <span><a href="">Tội ác</a></span>
+                                                    <span><a href="">Thám tử</a></span>
+                                                    <span><a href="">Bí ẩn</a></span>
+                                                    <span><a href="">Gián điệp</a></span>
+                                                    <span><a href="">Mua sắm tất cả</a></span>
+                                                </li>
+                                                <li class="Submenu-leftOption-item super-menu">
+                                                    <h4><a href="">Tôn giáo &T Tâm linh</a></h4>
+                                                    <span><a href="">Thuyết bất khả tri</a></span>
+                                                    <span><a href="">Chiêm tinh học</a></span>
+                                                    <span><a href="">Thuyết vô thần</a></span>
+                                                    <span><a href="">Đạo phật</a></span>
+                                                    <span><a href="">Cơ đốc giáo</a></span>
+                                                    <span><a href="">Mua sắm tất cả</a></span>
+                                                </li>
+                                                <li class="Submenu-leftOption-item super-menu">
+                                                    <h4><a href="">Các hạng mục khác</a></h4>
+                                                    <span><a href="">Lãng mạn</a></span>
+                                                    <span><a href="">Khoa học viễn tưởng & giả tưởng</a></span>
+                                                    <span><a href="">Toán khoa học</a></span>
+                                                    <span><a href="">Thanh thiếu niên & thanh niên</a></span>
+                                                    <span><a href="">Sức khỏe, Thể hình & Ăn kiêng</a></span>
+                                                    <span><a href="">Mua sắm tất cả</a></span>
+                                                </li>
+                                            </ul>
+                                            <div class="Submenu-rightOption">
+                                                <div class="Submenu-rightOption__top">
+                                                    <span><a href="" class="text--hover">Bán chạy nhất</a></span>
+                                                    <span><a href="" class="text--hover">Bản in lớn</a></span>
+                                                    <span><a href="" class="text--hover">Ngoại ngữ</a></span>
+                                                </div>
+                                                <div class="Submenu-rightOption__bottom">
+                                                    <span><a href="" class="text--hover">Ưu đãi sách tiết kiệm</a></span>
+                                                    <span><a href="" class="text--hover">ReadingRewards</a></span>
+                                                    <span><a href="" class="text--hover">Xem tất cả phiếu mua hàng</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--menu sach suu tam-->
+                        <div class="superMenu__item">
+                            <a href="">
+                                <span class="superMenu__item-link text--hover">
+                                    Sách sưu tầm
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <div class="MenuDropdown-container">
+                                <div class="MenuDropdown-submenu">
+                                        <div class="Submenu-container">
+                                            <div class="Submenu-leftOption grid__col super-menu">
+                                                <h4><a href="">Thể loại</a></h4>
+                                                <ul class=" grid__row SubMenu-leftOption-list Submenu-leftOption--space-between">
+                                                    <li class="Submenu-leftOption-item super-menu">
+                                                        <span><a href="">Phiêu luu hành động</a></span>
+                                                        <span><a href="">Sách cho trẻ em</a></span>
+                                                        <span><a href="">Tiểu sử</a></span>
+                                                        <span><a href="">Nghệ thuật,Âm nhạc & Nhiếp ảnh</a></span>
+                                                        <span><a href="">Giáo dục & Tham khảo</a></span>
+                                                        <span><a href="">Thể loại hư cấu</a></span>
+                                                        <span><a href="">Lịch sử</a></span>
+                                                        <span><a href="">Đồng thời</a></span>
+                                                        <span><a href="">Kinh điển</a></span>
+                                                        <span><a href="">Châu Mỹ</a></span>
+                                                    </li>
+                                                    <li class="Submenu-leftOption-item super-menu">
+                                                        <span><a href="">Môn lịch sử</a></span>
+                                                        <span><a href="">Nhân văn</a></span>
+                                                        <span><a href="">Văn học</a></span>
+                                                        <span><a href="">Văn học & Viễn tưởng</a></span>
+                                                        <span><a href="">Quân sự</a></span>
+                                                        <span><a href="">Bí ẩn, li kì & li kì</a></span>
+                                                        <span><a href="">Chính trị & Khoa học xã hội</a></span>
+                                                        <span><a href="">Tôn giáo & Tâm linh</a></span>
+                                                        <span><a href="">Toán khoa học</a></span>
+                                                        <span><a href="">Khoa học viễn tưởng & giả tưởng</a></span>
+                                                    </li>
+                                                    <li class="Submenu-leftOption-item super-menu">
+                                                        <span><a href="">Khoa học xã hội</a></span>
+                                                        <span><a href="">Sách giáo khoa</a></span>
+                                                        <span><a href="">Du lịch</a></span>
+                                                        <span><a href="">Phim kinh dị</a></span>
+                                                        <span><a href="">Quốc gia</a></span>
+                                                        
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="Submenu-rightOption">
+                                                <div class="Submenu-rightOption__top">
+                                                    <span><a href="" class="text-under--hover">Phiên bản đầu tiên</a></span>
+                                                    <span><a href="" class="text-under--hover">Sách đã ký</a></span>
+                                                    <span><a href="" class="text-under--hover"></a></span>
+                                                </div>
+                                                <div class="Submenu-rightOption__bottom">
+                                                    <span><a href="" class="text-under--hover"></a></span>
+                                                    <span><a href="" class="text-under--hover"></a></span>
+                                                    <span><a href="" class="text-under--hover"></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- betterseller -->
+                        <div class="superMenu__item">
+                            <a href="#bestsale  ">
+                                <span class="superMenu__item-link text--hover">
+                                    Bán chạy nhất
+                                    
+                                </span>
+                            </a>
+                        </div>
+                        <!-- new and trending -->
+                        <div class="superMenu__item">
+                            <a href="#new-trending">
+                                <span class="superMenu__item-link text--hover">
+                                    Mới & Thịnh hành
+                                  
+                                </span>
+                            </a>
+                        </div>
+                        <!-- thriftBook Deals -->
+                        <div class="superMenu__item">
+                            <a href="">
+                                <span class="superMenu__item-link text--hover">
+                                    Sách ưu đãi
+                                   
+                                </span>
+                            </a>
+                        </div>
+                        <!-- just arrived -->
+                        <div class="superMenu__item">
+                            <a href="">
+                                <span class="superMenu__item-link text--hover">
+                                    Vừa tới
+                                   
+                                </span>
+                            </a>
+                        </div>
+                        <!-- under $5.00 -->
+                        <div class="superMenu__item">
+                            <a href="">
+                                <span class="superMenu__item-link text--hover">
+                                    Duới $5.00
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container-covid">
+            <div class="container-covid grid">
+                <div class="container-covid__heading">
+                    <a href="" class="covid__heading-title text--hover">Read our full COVID-19 satement</a>
+                </div>
+            </div>
+        </div>
+        <!-- display none -->
+        <div class="buy-container" id="">
+            <div class="grid">
+                <div class="work-container">
+                    <div class="work-Slider">
+                        <div class="work-Slider__img">
+                            <img src="./assets/img/bestseller/harry-potter-and-the-philosophers-stone-harry-porter-va-hon-da-phu-thuy-15481.jpg" alt="">
+                        </div>
+                        <div class="work-Slider__link">
+                            <div class="work-Slider__link-item back--facebook">
+                                <i class="work-icon fab fa-facebook-f"></i>
+                            </div>
+                            <div class="work-Slider__link-item back--instagram">
+                                <i class="work-icon fab fa-instagram"></i>
+                            </div>
+                            <div class="work-Slider__link-item back--twitter">
+                                <i class="work-icon fab fa-twitter"></i>
+                            </div>
+                            <div class="work-Slider__link-item back--share">
+                                <i class="work-icon fas fa-share-alt"></i>
+                            </div>
+                        </div>
+                        <div class="work-Slider__card">
+                            <p>ISBN: <span class="work-selecterBold">0439136369</span></p>
+                            <p>ISBN13: <span class="work-selecterBold">9780439136365</span></p>
+                        </div>
+                    </div>
+                    <div class="work-interface">
+                        <div class="work-interface__title">
+                            <p class="work-interface__title-heading">Harry Potter and the Prisoner of Azkaban</p>
+                            <p class="work-interface__title-desc">(Book #3 in the <strong class=""><a href="work-selecterBold"> Harry Potter Series</a></strong>)</p>
+                            <p class="work-interface__title-author">by <strong class=""><a href="work-selecterBold">J.K. Rowling</a> </strong></p>
+                        </div>
+                        <div class="work-interface__ratting">
+                            <i class="ratting-icon-star fas fa-star"></i>
+                            <i class="ratting-icon-star fas fa-star"></i>
+                            <i class="ratting-icon-star fas fa-star"></i>
+                            <i class="ratting-icon-star fas fa-star"></i>
+                            <i class="ratting-icon-star fas fa-star-half-alt"></i>
+                            <span class="work-interface__ratting-reviewer work-selecterBold">
+                                See Customer Reviews
+                            </span>
+                        </div>
+                        <div class="work-interface__format">
+                            <div class="work-heading">Select Format</div>
+                            <div class="work-body">
+                                <div class="wrok-interface__price">
+                                    <span class="work-selecterBold">HardCover</span>
+                                    <span>$5.49 - $23.52</span>
+                                </div>
+                                <div class="wrok-interface__price">
+                                    <span class="work-selecterBold">Paperback</span>
+                                    <span>$3.99 - $10.63</span>
+                                </div>
+                                <div class="wrok-interface__price">
+                                    <span class="work-selecterBold">Mart Market<br>Paperback</span>
+                                    <span>--</span>
+                                </div>
+                                <div class="wrok-interface__price">
+                                    <span class="work-selecterBold">Library Binding</span>
+                                    <span>$6.89 - $19.23</span>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="work-interface__format">
+                            <div class="work-heading">
+                                Select Conditional
+                                <i class="work-icon fas fa-question-circle"></i>
+                            </div>
+                            <div class="work-body">
+                                <div class="wrok-interface__price">
+                                    <span class="work-selecterBold">Like New</span>
+                                    <span>--</span>
+                                </div>
+                                <div class="wrok-interface__price">
+                                    <span class="work-selecterBold">Very Good</span>
+                                    <span>$6.49</span>
+                                </div>
+                                <div class="wrok-interface__price">
+                                    <span class="work-selecterBold">Good</span>
+                                    <span>$5.79</span>
+                                </div>
+                                <div class="wrok-interface__price">
+                                    <span class="work-selecterBold">Acceptable</span>
+                                    <span>$5.49</span>
+                                </div>
+                                <div class="wrok-interface__price">
+                                    <span class="work-selecterBold">New</span>
+                                    <span>$23.52</span>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="work-formatAddittional">
+                            <div class="work__btn btn">
+                                <i class="work-icon fas fa-gem"></i>
+                                <strong class="work-selecterBold">Collectibles from $80.00</strong> 
+                                <i class="work-icon fas fa-angle-right"></i>
+                            </div>
+                            <div class="work__btn btn">
+                                <i class="work-icon fas fa-book-open"></i>
+                               <strong class="work-selecterBold">See All 134 Editions from $3.99</strong> 
+                                <i class="work-icon fas fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="work-Slider">
+                       <h2>Selecter</h2>
+                       <div class="work-Slider__card">
+                            <p>Format: <span class="work-selecterBold">Paperback</span></p>
+                            <p>Conditional: <span class="work-selecterBold">Acceptable</span></p>
+                        </div>
+                       <span class="price">$3.99</span>
+                       <p class="discount-price">Save &7.00!</p>
+                       <p class="listed-price">List Price<span class="work-stike">$10.99</span></p>
+                       <p>778 Available</p>
+                       <div class="quantity">
+                           Quantity:
+                           <div class="quantity-num">
+                               1
+                               <i class="work-icon fas fa-angle-down"></i>
+                           </div>
+                       </div>
+                       <div class="work__btn btn work-selecterBold" style="background-color: #ffcc33; ">
+                            <strong style="color: var(--text-color);">Add to cart</strong> 
+                       </div>
+                       <div class="work-selecterBold WorkTab-addToWishlist work__btn">
+                            <strong>
+                                <i class="work-icon fas fa-heartbeat"></i>
+                                Add to wish list 
+                            </strong>       
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- bok over view -->
+
+        <div class="book-overView">
+            <div class="grid">
+                <h3 class="book-overView__title">Book Overview</h3>
+                <p class="book-overView__desc">
+                    This description may be from another edition of this product. #1 NEW YORK TIMES BESTSELLER NOW A STARZ ORIGINAL SERIES Unrivaled storytelling. Unforgettable characters. Rich historical detail. These are the hallmarks of Diana Gabaldon s work. Her New York Times bestselling Outlander novels have earned the praise of critics and captured the hearts of millions of fans. Here is the story that started it all, introducing two remarkable characters, Claire Beauchamp Randall and Jamie Fraser, in a spellbinding novel of passion and history that combines exhilarating adventure with a love story for the ages. OUTLANDER Scottish Highlands, 1945. Claire Randall, a former British combat nurse, is just back from the war and reunited with her husband on a second honeymoon when she walks through a standing stone in one of the ancient circles that dot the British Isles. Suddenly she is a Sassenach an outlander in a Scotland torn by war and raiding clans in the year of Our Lord . . . 1743. Claire is catapulted into the intrigues of a world that threatens her life, and may shatter her heart. Marooned amid danger, passion, and violence, Claire learns her only chance of safety lies in Jamie Fraser, a gallant young Scots warrior. What begins in compulsion becomes urgent need, and Claire finds herself torn between two very different men, in two irreconcilable lives. Praise for Diana Gabaldon s Outlander novels Marvelous and fantastic adventures, romance, sex . . . perfect escape reading. San Francisco Chronicle , on Outlander History comes deliciously alive on the page. New York Daily News , on Outlander Gabaldon is a born storyteller. . . . The pages practically turn themselves. The Arizona Republic , on Dragonfly in Amber Triumphant . . . Her use of historical detail and a truly adult love story confirm Gabaldon as a superior writer. Publishers Weekly , on Voyager Unforgettable characters . . . richly embroidered with historical detail. The Cincinnati Post , on Drums of Autumn A grand adventure written on a canvas that probes the heart, weighs the soul and measures the human spirit across centuries]. CNN , on The Fiery Cross The large scope of the novel allows Gabaldon to do what she does best, paint in exquisite detail the lives of her characters. Booklist , on A Breath of Snow and Ashes Features all the passion and swashbuckling that fans of this historical fantasy series have come to expect. People , on Written in My Own Heart s Blood From the Hardcover edition. 
+                </p>
+                    
+                <button class="btn read-more--btn text-under--hover">
+                    Read Video Transcript
+                </button>
+                <div class="book-inforContainer"></div>
+            </div>
+        </div>
+
+        <div class="modal js-modal">
+            <div class="modal__container js-modal-container" id="modal__container">
+                <div class="form-container sign-up-container">
+                    <form action="#">
+                        <h1 class="form-container--heading"> Create Account</h1>
+                        <div class="social-container">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <span>or use your email for registration</span>
+                        <input class="modal-form--control" type="text" placeholder="Name" />
+                        <input class="modal-form--control" type="email" placeholder="Email" />
+                        <input class="modal-form--control " type="password" placeholder="Password" />
+                        <button class="btn btn--sign">Sign Up</button>
+                    </form>
+                </div>
+                <div class="form-container sign-in-container">
+                    <form action="#">
+                        <h1 class="form-container--heading">Sign in</h1>
+                        <div class="social-container">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <span>or use your account</span>
+                        <input class="modal-form--control" type="email" placeholder="Email" />
+                        <input class="modal-form--control" type="password" placeholder="Password" />
+                        <a href="#">Forgot your password?</a>
+                        <button class="btn btn--sign">Sign In</button>
+                    </form>
+                </div>
+                <div class="overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h1 class="overlay-panel--heading">Welcome Back!</h1>
+                            <p>To keep connected with us please login with your personal info</p>
+                            <button class="btn btn--sign ghost" id="signIn">Sign In</button>
+                            </div>
+                            <div class="overlay-panel overlay-right">
+                            <h1 class="overlay-panel--heading">Hello, Friend!</h1>
+                            <p>Enter your personal details and start journey with us</p>
+                            <button class="btn btn--sign ghost" id="signUp">Sign Up</button>
+                            </div>
+                        </div>
+                </div>
+                <div class="modal__close" id="modal__close">
+                    <i class="modal__close-icon fas fa-times-circle"></i>
+                </div>
+            </div>
+        </div>
+        <!-- giữ nguyên -->
+        <div class="footer">
+            <div class="footer-container grid ">
+                <div class="footer-content grid__row">
+                    <div class="footer-link grid__row">
+                        <div class="footer-link__item ">
+                            <h3>Danh mục phổ biến</h3>
+                            <ul>
+                                <li><a href="" class="text-under--hover">Trẻ em</a></li>
+                                <li><a href="" class="text-under--hover">Thanh thiếu niên và Thanh niên</a></li>
+                                <li><a href="" class="text-under--hover">Tự lực</a></li>
+                                <li><a href="" class="text-under--hover">Văn học & viễn tưởng</a></li>
+                                <li><a href="" class="text-under--hover">Bí ẩn & kinh dị</a></li>
+                                <li><a href="" class="text-under--hover">Khoa học viễn tưởng và giả tưởng</a></li>
+                                <li><a href="" class="text-under--hover">lãng mạn</a></li>
+                                <li><a href="" class="text-under--hover">Sách in khổ lớn</a></li>
+                                <li><a href="" class="text-under--hover">Sách hiếm & Sưu tầm</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-link__item ">
+                            <h3>Tài khoản của tôi</h3>
+                            <ul>
+                                <li><a href="" class="text-under--hover">Cài đặt</a></li>
+                                <li><a href="" class="text-under--hover">Giỏ hàng</a></li>
+                                <li><a href="" class="text-under--hover">Lịch sử đơn hàng</a></li>
+                                <li><a href="" class="text-under--hover">Danh sách mong muốn</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-link__item ">
+                            <h3>Trợ giúp nhanh</h3>
+                            <ul>
+                                <li><a href="" class="text-under--hover">Trợ giúp & Hỗ trợ</a></li>
+                                <li><a href="" class="text-under--hover">Chi phí vận chuyển</a></li>
+                                <li><a href="" class="text-under--hover">Thanh toán</a></li>
+                                <li><a href="" class="text-under--hover">Chính sách hoàn trả</a></li>
+                                <li><a href="" class="text-under--hover">Liên hệ chúng tôi</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="footer-link__item grid__col">
+                            <h3>Trang mạng</h3>
+                            <ul>
+                                <li><a href="" class="text-under--hover">Nói với một người bạn</a></li>
+                                <li><a href="" class="text-under--hover">Lời chứng thực</a></li>
+                                <li><a href="" class="text-under--hover">Thẻ quà tặng</a></li>
+                                <li><a href="" class="text-under--hover">Blog</a></li>
+                                <li><a href="" class="text-under--hover">Xem trang web dành cho thiết bị di động</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-sidebar">
+                        <h3>Theo chúng tôi</h3>
+                        <div class="footer-social">
+                            <a href="" target="_blank" title="Thích chung tôi trên facebook">
+                                <i class="footer-social__icon fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" target="_blank" title="Thích chung tôi trên twitter">
+                                <i class="footer-social__icon fab fa-twitter"></i>
+                            </a>
+                            <a href="" target="_blank" title="Thích chung tôi trên pinterest">
+                                <i class="footer-social__icon fab fa-pinterest-p"></i>
+                            </a>
+                            <a href="" target="_blank" title="Thích chung tôi trên tumblr">
+                                <i class="footer-social__icon fab fa-tumblr"></i>
+                            </a>
+                            <a href="" target="_blank" title="Thích chung tôi trên instagram">
+                                <i class="footer-social__icon fab fa-instagram-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- diplay none -->
+        <div class="scroll-up">
+            <a href="#destopheader" class="srcoll-up--header"><i class="scroll-up-icon fas fa-arrow-up"></i> </a>
+        </div>
+    </div>
+    <!-- open modal signin - signup  -->
+<script>
+
+    //click sign in and sign up
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container = document.getElementById('modal__container');
+
+
+    signUpButton.addEventListener('click', () => {
+        container.classList.add("right-panel-active");
+    });
+
+    signInButton.addEventListener('click', () => {
+        container.classList.remove("right-panel-active");
+    });
+
+    //open modal sign in and sign up
+    const modal = document.querySelector('.js-modal');
+    const modalCLose = document.getElementById('modal__close');
+    const accOut = document.querySelector('.js-btn--logout');
+    const modalContainer = document.querySelector('.js-modal-container');
+
+    function showSignInAcc(){
+        modal.classList.add('open');
+        container.classList.remove("right-panel-active");
+
+    }
+
+    function showSignUpAcc(){
+        modal.classList.add('open');
+        container.classList.add("right-panel-active")
+    }
+
+    modalCLose.addEventListener('click', () => {
+        modal.classList.remove("open");
+    });
+
+    accOut.addEventListener('click',showSignUpAcc);
+
+    function hideAcc(){
+        modal.classList.remove('open');
+    }
+
+    modal.addEventListener('click',hideAcc);
+
+    modalContainer.addEventListener('click', function (event) {
+       event.stopImmediatePropagation(modalContainer);
+   })
+  
+</script>
+</body>
+</html>
