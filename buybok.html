@@ -10,6 +10,7 @@
     <link rel="icon" type="image/icon" href="./assets/img/favicon/images.jfif"/>
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/input.css">
     <link rel="stylesheet" href="./assets/css/buybook.css">
 </head>
 <body>
@@ -517,14 +518,111 @@
         <div class="book-overView">
             <div class="grid">
                 <h3 class="book-overView__title">Book Overview</h3>
-                <p class="book-overView__desc">
+                <p class="book-overView__desc  js-book-overView__desc">
                     This description may be from another edition of this product. #1 NEW YORK TIMES BESTSELLER NOW A STARZ ORIGINAL SERIES Unrivaled storytelling. Unforgettable characters. Rich historical detail. These are the hallmarks of Diana Gabaldon s work. Her New York Times bestselling Outlander novels have earned the praise of critics and captured the hearts of millions of fans. Here is the story that started it all, introducing two remarkable characters, Claire Beauchamp Randall and Jamie Fraser, in a spellbinding novel of passion and history that combines exhilarating adventure with a love story for the ages. OUTLANDER Scottish Highlands, 1945. Claire Randall, a former British combat nurse, is just back from the war and reunited with her husband on a second honeymoon when she walks through a standing stone in one of the ancient circles that dot the British Isles. Suddenly she is a Sassenach an outlander in a Scotland torn by war and raiding clans in the year of Our Lord . . . 1743. Claire is catapulted into the intrigues of a world that threatens her life, and may shatter her heart. Marooned amid danger, passion, and violence, Claire learns her only chance of safety lies in Jamie Fraser, a gallant young Scots warrior. What begins in compulsion becomes urgent need, and Claire finds herself torn between two very different men, in two irreconcilable lives. Praise for Diana Gabaldon s Outlander novels Marvelous and fantastic adventures, romance, sex . . . perfect escape reading. San Francisco Chronicle , on Outlander History comes deliciously alive on the page. New York Daily News , on Outlander Gabaldon is a born storyteller. . . . The pages practically turn themselves. The Arizona Republic , on Dragonfly in Amber Triumphant . . . Her use of historical detail and a truly adult love story confirm Gabaldon as a superior writer. Publishers Weekly , on Voyager Unforgettable characters . . . richly embroidered with historical detail. The Cincinnati Post , on Drums of Autumn A grand adventure written on a canvas that probes the heart, weighs the soul and measures the human spirit across centuries]. CNN , on The Fiery Cross The large scope of the novel allows Gabaldon to do what she does best, paint in exquisite detail the lives of her characters. Booklist , on A Breath of Snow and Ashes Features all the passion and swashbuckling that fans of this historical fantasy series have come to expect. People , on Written in My Own Heart s Blood From the Hardcover edition. 
                 </p>
-                    
-                <button class="btn read-more--btn text-under--hover">
-                    Read Video Transcript
+                <button class="btn read-more--btn text-under--hover js-btn--para-full dl--block" >
+                    Read full Overview
                 </button>
-                <div class="book-inforContainer"></div>
+                <button class="btn read-more--btn text-under--hover js-btn--para-less dl--block-none">
+                    Read less
+                </button>
+                <div class="book-inforContainer">
+                    <div class="book-editionTab">
+                        <input type="radio" name="book" id="book-info1">
+                        <input type="radio" name="book" id="book-info2">
+                        <input type="radio" name="book" id="book-info3">
+                        
+                       <div class="book__info-title">
+                            <label for="book-info1" class="book-info__item-heading">Edition Details</label> 
+                            <label for="book-info2" class="book-info__item-heading">Professional Review</label> 
+                            <label for="book-info3" class="book-info__item-heading">Awards</label> 
+                        </div> 
+                        
+                        <div class="book__info-body ">
+                            <div class="book__info-body-item ">
+                                <ul class="book-info__list ">
+                                    <li class="book-info__item">
+                                        <span class="book-info__item-title">Format:</span>
+                                        <span class="book-info__item-value">Hardcover</span>
+                                    </li>
+                                    <li class="book-info__item">
+                                        <span class="book-info__item-title">Language:</span>
+                                        <span class="book-info__item-value">English</span>
+                                    </li>
+                                    <li class="book-info__item">
+                                        <span class="book-info__item-title">ISBN:</span>
+                                        <span class="book-info__item-value">1250220254</span>
+                                    </li>
+                                    <li class="book-info__item">
+                                        <span class="book-info__item-title">ISBN13:</span>
+                                        <span class="book-info__item-value">9781250220257</span>
+                                    </li>
+                                    <li class="book-info__item">
+                                        <span class="book-info__item-title">Release Date:</span>
+                                        <span class="book-info__item-value">September 2021</span>
+                                    </li>
+                                    <li class="book-info__item">
+                                        <span class="book-info__item-title">Publisher:</span>
+                                        <span class="book-info__item-value">Holt & Company, Henry</span>
+                                    </li>
+                                    <li class="book-info__item">
+                                        <span class="book-info__item-title">Length:</span>
+                                        <span class="book-info__item-value">448 Pages</span>
+                                    </li>
+                                    <li class="book-info__item">
+                                        <span class="book-info__item-title">Weight:</span>
+                                        <span class="book-info__item-value">1.78 lbs</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="book__info-body-item ">
+                                <ul class="book-info__list  ">
+                                    <li class="book-info__item">
+                                        <span class="book-info__item-desc">
+                                            The following review comes from a different edition of this work
+                                        </span>
+                                    </li>
+                                    <li class="book-info__item">
+                                        <span class="book-info__item-desc">
+                                            Dale tackles Harry's last hurrah with the same undercurrent of excitement and mind-boggling roster of distinct character voices that he brought to his previous six performances. Less of the Hogwarts setting, and a more dangerous quest for Harry and his friends, means that Dale has less jocularity to work with here (something at which he excels), 
+                                            but he does not disappoint in conveying both the heart-rending drama and sense of closure of Rowling's final Potter outing. Late in the recording, when Harry realizes his fate and Rowling's plot twists fly, Dale is at the top of his game, drawing listeners into the orbit of his comforting voice. Throughout, Harry and his friends appropriately sound a bit older than they did in the early volumes,
+                                            and it's hard to know whether it's imagined or not, but there's a hint of wistfulness in Dale's voice, perhaps because both narrator and listener know it's the last time they'll be together for a new Potter adventure. The CD packaging, which makes extensive use of Mary GrandPre's spot illustrations and cover art on the discs and sleeves, is also a treat for fans. Ages 10-up. (July) (c) Copyright PWxyz, 
+                                            LLC. All rights reserved
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="book__info-body-item ">
+                                <ul class="book-info__list  ">
+                                    <li class="book-info__item">
+                                        <span class="book-info__item-desc">
+                                            We don't have a record of any awards for this work.
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Customer reivewer -->
+        <div class="customer-reviewer">
+            <div class="grid">
+                <p class="work-interface__title-heading">Customer Reviews </p>
+                <div class="work-interface__ratting">
+                    <i class="ratting-icon-star fas fa-star"></i>
+                    <i class="ratting-icon-star fas fa-star"></i>
+                    <i class="ratting-icon-star fas fa-star"></i>
+                    <i class="ratting-icon-star fas fa-star"></i>
+                    <i class="ratting-icon-star fas fa-star-half-alt"></i>
+                    <span class="work-interface__ratting-reviewer work-selecterBold">
+                        See Customer Reviews
+                    </span>
+                </div>
             </div>
         </div>
 
@@ -708,6 +806,28 @@
        event.stopImmediatePropagation(modalContainer);
    })
   
+   const paraDesc = document.querySelector('.js-book-overView__desc');
+   const btnParaFull = document.querySelector('.js-btn--para-full');
+   const btnParaLess = document.querySelector('.js-btn--para-less');
+
+   function showPara(){
+       paraDesc.classList.add('book-overView__desc--focus');
+       btnParaFull.classList.add('dl--block-none');
+       btnParaLess.classList.add('dl-block');
+       btnParaLess.classList.remove('dl--block-none');
+   }
+
+   function hidePara(){
+        paraDesc.classList.remove('book-overView__desc--focus');
+       btnParaFull.classList.remove('dl--block-none');
+       btnParaLess.classList.remove('dl--block');
+       btnParaLess.classList.add('dl--block-none');
+   }
+
+   btnParaFull.addEventListener('click',showPara);
+   btnParaLess.addEventListener('click',hidePara)
+   
 </script>
+
 </body>
 </html>

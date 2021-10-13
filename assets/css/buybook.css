@@ -61,6 +61,7 @@ strong > a{
 }
 
 .work-Slider__link-item {
+    cursor: pointer;
     display: inline-flex;
     padding: 4px 16px;
 }
@@ -230,4 +231,117 @@ strong ~ .work-icon{
     background:none;
     box-shadow: none;
     margin-top: 20px;
+}
+
+.book-overView__title {
+    font-size: 3rem;
+    line-height: 3.2rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.book-overView__desc{
+    display: -webkit-box;
+	/* word-break: break-all; */
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	word-break: break-word;
+    line-height: 2rem;
+
+}
+.book-overView__desc ~ button
+{
+    font-size: 1.4rem;
+}
+
+.book-overView__desc--focus{
+    -webkit-line-clamp: unset;
+}
+
+.dl--block{
+    display: block;
+}
+
+.dl--block-none{
+    display: none;
+}
+
+.book-inforContainer{
+    display: flex;
+}
+
+.book-editionTab {
+    width: 100%;
+    padding: 0 32px;
+    background-color: #efefef;
+}
+
+.book-editionTab input{
+    display: none;
+}
+
+.book__info-title {
+    position: relative;
+    padding: 0 28px;
+    border-bottom: 2px solid #ccc;
+    margin: 16px 0;
+}
+
+.book__info-body {
+    padding-bottom: 24px;
+    min-height: 290px;
+}
+
+
+
+.book-info__item-heading {
+    display: inline-block;
+    padding: 12px 30px;
+    min-width: 220px;
+    min-height: 48px;
+}
+
+.book-info__item-heading{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-info__item,
+.book-info__item-heading {
+    font-size: 1.6rem;
+}
+
+.book-info__item-title,
+.book-info__item-value {
+    display: table-cell;
+    padding: 4px 0;
+}
+
+.book-info__list{
+    display: table;
+}
+
+.book-info__item {
+    display: table-row;
+}
+
+.book-info__item-title{
+    text-align: right;
+    padding-right: 8px;
+}
+
+.book-info__item-value {
+    text-align: left;
+    padding-left: 8px;
+}
+
+.book-info__item-desc{
+    text-align: justify;
+    padding: 12px 0;
+    display: block;
+    line-height: 2rem;
 }

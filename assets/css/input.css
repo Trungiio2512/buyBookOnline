@@ -1,0 +1,18 @@
+#book-info1:checked ~ .book__info-body > .book__info-body-item:nth-child(1),
+#book-info2:checked ~ .book__info-body > .book__info-body-item:nth-child(2),
+#book-info3:checked ~ .book__info-body > .book__info-body-item:nth-child(3)
+{
+    display: block;
+}
+
+#book-info1:checked ~  .book__info-body > .book__info-body-item:nth-child(2),
+#book-info1:checked ~  .book__info-body > .book__info-body-item:nth-child(3),
+#book-info2:checked ~  .book__info-body > .book__info-body-item:nth-child(1),
+#book-info2:checked ~  .book__info-body > .book__info-body-item:nth-child(3),
+#book-info3:checked ~  .book__info-body > .book__info-body-item:nth-child(1),
+#book-info3:checked ~  .book__info-body > .book__info-body-item:nth-child(2)
+{
+    display: none;
+} 
+
+
